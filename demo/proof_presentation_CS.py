@@ -2,7 +2,7 @@
 import subprocess
 import os
 
-credenciales = [200, 250, 300, 400, 500]
+credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
 pruebas = 25
 
 pid = os.getpid()
