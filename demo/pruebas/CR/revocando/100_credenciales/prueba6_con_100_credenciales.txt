@@ -1,0 +1,591 @@
+Preparing agent image...
+sha256:a62ceafa2651f55e14965c11f590f9d1c25f920c07414a7fb21f8001318b18ae
+Trying to detect ngrok service endpoint
+jq not found
+DOCKERHOST=10.0.2.15
+DOCKER_ENV=-e LOG_LEVEL= -e RUNMODE=docker -e DOCKERHOST=10.0.2.15 -e AGENT_PORT=8050 -e TRACE_TARGET=log -e TRACE_TAG=acapy.events -e TRACE_ENABLED=
+Starting [performance] agent with args [--port 8050 --count 100 --revocation --revoke_credentials --publish_revocations_at_once --tails-server-base-url http://72ef-81-38-112-228.ngrok.io]
+[0m[?7h[0;35mStarted webhook listener on port: 8052[0m
+
+[0m[0m[?7h[0;35mStarted webhook listener on port: 8055[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistering Faber ...[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mnym_info: {'did': 'W7wPMmQJD4foAbYJUvVktA', 'seed': 'd_000000000000000000000000261569', 'verkey': 'GsXegP4UgjQfuiqxN8oJst9TFqCn9i95bJsZTvN1f8j8'}[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistered DID: W7wPMmQJD4foAbYJUvVktA[0m
+
+[0m[0m[?7h[0mAlice      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8050', '--label', 'Alice', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8050', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8051', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'alice363357', '--wallet-key', 'Alice363357', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--timing-log', 'logs/alice_perf.log', '--webhook-url', 'http://10.0.2.15:8052/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--trace-target', 'log', '--trace-tag', 'acapy.events', '--trace-label', 'Alice.trace', '--auto-accept-invites', '--auto-accept-requests', '--auto-respond-credential-offer', '--auto-store-credential', '--monitor-ping'][0m
+
+[0mAlice      | 
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | :: Alice                                    ::
+Alice      | ::                                          ::
+Alice      | ::                                          ::
+Alice      | :: Inbound Transports:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8050                  ::
+Alice      | ::                                          ::
+Alice      | :: Outbound Transports:                     ::
+Alice      | ::                                          ::
+Alice      | ::   - http                                 ::
+Alice      | ::   - https                                ::
+Alice      | ::                                          ::
+Alice      | :: Administration API:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8051                  ::
+Alice      | ::                                          ::
+Alice      | ::                               ver: 0.7.3 ::
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | 
+Alice      | Listening...
+Alice      | 
+[0m[?7h[0mFaber      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8053', '--label', 'Faber', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8053', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8054', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'faber261569', '--wallet-key', 'Faber261569', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--seed', 'd_000000000000000000000000261569', '--webhook-url', 'http://10.0.2.15:8055/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--tails-server-base-url', 'http://72ef-81-38-112-228.ngrok.io', '--auto-accept-invites', '--auto-accept-requests', '--monitor-ping', '--auto-respond-credential-proposal', '--auto-respond-credential-request'][0m
+
+[0mFaber      | 
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | :: Faber                                    ::
+Faber      | ::                                          ::
+Faber      | ::                                          ::
+Faber      | :: Inbound Transports:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8053                  ::
+Faber      | ::                                          ::
+Faber      | :: Outbound Transports:                     ::
+Faber      | ::                                          ::
+Faber      | ::   - http                                 ::
+Faber      | ::   - https                                ::
+Faber      | ::                                          ::
+Faber      | :: Public DID Information:                  ::
+Faber      | ::                                          ::
+Faber      | ::   - DID: W7wPMmQJD4foAbYJUvVktA          ::
+Faber      | ::                                          ::
+Faber      | :: Administration API:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8054                  ::
+Faber      | ::                                          ::
+Faber      | ::                               ver: 0.7.3 ::
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | 
+Faber      | Listening...
+Faber      | 
+[0m[?7h[0;35mStartup duration: 8.21s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mConnected[0m
+
+[0m[0m[?7h[0;35mConnect duration: 0.29s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test schema[0m
+
+[0m[0m[?7h[0mAlice      | [0;34mConnected[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mSchema ID: W7wPMmQJD4foAbYJUvVktA:2:degree schema:42.8.2[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test credential definition[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:f6c3b84d-7b3d-4421-bf0e-c8e78f78a03f state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:f6c3b84d-7b3d-4421-bf0e-c8e78f78a03f state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:f6c3b84d-7b3d-4421-bf0e-c8e78f78a03f state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mCredential Definition ID: W7wPMmQJD4foAbYJUvVktA:3:CL:728:default[0m
+
+[0m[0m[?7h[0;35mPublish duration: 30.85s[0m
+
+[0m[0m[?7h[0;35mStarting credential issues[0m
+
+[0m[?1l[6n[?2004h[?25l[0m[?7l[0m[J[?7h[0m[?25l[?7l[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m100 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/100 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1lWARNING: your terminal doesn't support cursor position requests (CPR).
+
+[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m100 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/100 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[58C[0m] [0m [C0/[0m10[C [0meta [ [0m
+
+[24C[0m2[33C]  [C2/10[C eta [04:42[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[11C3[C08[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[5C=>[30C4[11C2[C22[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[37C5[11C1[C56[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[37C7[13C22[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[6C=>[29C8[13C13[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m10[36C10[11C0[C57[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[37C1[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[0m
+
+[74C[0m1[C01[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[7C=>[28C2[11C0[C59[A[78D[?7h[0m[?25l[?7l[0m
+
+[74C[0m1[C00[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[11C0[C56[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[37C4[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[8C=>[27C5[13C48[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[37C6[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[37C7[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[9C=>[26C9[13C37[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m20[36C20[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[37C1[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[37C2[14C3[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[10C=>[25C3[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[37C4[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[37C5[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[11C=>[24C7[13C28[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[37C8[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[37C9[14C6[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[23C[0m31[12C=>[22C31[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[37C2[14C3[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C2[10C10:01[78D[?7h[0m[?25l[?7l[24C[0m4[5C=>[30C4[10C04[C56[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[77C[0m9[78D[?7h[0m[?25l[?7l[24C[0m5[37C5[11C3[75D[?7h[0m[?25l[?7l[24C[0m6[37C6[13C17[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[24C[0m4[13C=>[22C4[14C4[A[78D[?7h[0m[?25l[?7l[76C[0m20[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[24C[0m5[37C5[A[63D[?7h[0m[?25l[?7l[24C[0m9[6C=>[29C9[11C2[C11[0m
+
+[24C[0m6[37C6[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m2[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[24C[0m7[37C7[14C2[A[78D[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[24C[0m8[14C=>[21C8[14C1[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[23C[0m40[36C40[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m10[36C10[13C02[78D[?7h[0m[?25l[?7l[24C[0m1[37C1[11C1[C50[78D[?7h[0m[?25l[?7l[24C[0m2[7C=>[28C2[13C4[77D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[24C[0m2[15C=>[20C2[13C19[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[14C8[A[78D[?7h[0m[?25l[?7l[24C[0m3[37C3[13C33[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[24C[0m4[37C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[16C=>[19C5[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m6[37C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[37C7[14C6[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[24C[0m8[37C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[23C[0m50[17C=>[17C50[14C4[A[78D[?7h[0m[?25l[?7l[76C[0m40[0m
+
+[24C[0m1[37C1[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[18C=>[17C4[14C2[A[78D[?7h[0m[?25l[?7l[77C[0m1[78D[?7h[0m[?25l[?7l[24C[0m6[8C=>[27C6[13C20[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[24C[0m9[9C=>[26C9[13C05[78D[?7h[0m[?25l[?7l[23C[0m21[36C21[11C0[C57[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[24C[0m4[10C=>[25C4[13C49[78D[?7h[0m[?25l[?7l[24C[0m8[11C=>[24C8[14C0[78D[?7h[0m[?25l[?7l[23C[0m30[12C=>[22C30[13C36[78D[?7h[0m[?25l[?7l[77C[0m7[78D[?7h[0m[?25l[?7l[24C[0m1[37C1[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[37C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[19C=>[16C6[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mDone starting 100 credential exchanges in 16.19s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 31.0% [0m[========>                   ] [0m 31/[0m100 [0meta [00:36]
+[79C [0m
+
+[0mReceiving credentials  56.0% [===============>            ]  56/100 eta [00:12]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[37C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[37C8[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C2[14C5[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[24C[0m3[37C3[14C3[78D[?7h[0m[?25l[?7l[24C[0m4[13C=>[22C4[14C2[78D[?7h[0m[?25l[?7l[24C[0m7[37C7[13C28[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[37C9[14C1[A[78D[?7h[0m[?25l[?7l[23C[0m40[14C=>[20C40[14C5[78D[?7h[0m[?25l[?7l[24C[0m3[15C=>[20C3[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m4[37C4[14C1[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m60[20C=>[14C60[A[63D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[24C[0m1[37C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[37C2[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m5[16C=>[19C5[14C1[78D[?7h[0m[?25l[?7l[24C[0m8[37C8[13C19[78D[?7h[0m[?25l[?7l[23C[0m51[17C=>[17C51[14C7[0m
+
+[24C[0m3[21C=>[14C3[A[63D[?7h[0m[?25l[?7l[24C[0m4[18C=>[17C4[14C5[0m
+
+[24C[0m5[37C5[13C09[A[78D[?7h[0m[?25l[?7l[24C[0m6[19C=>[16C6[14C4[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[37C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[22C=>[13C7[14C8[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m7[37C7[14C3[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[24C[0m8[37C8[63D[?7h[0m[?25l[?7l[24C[0m9[37C9[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[24C[0m8[37C8[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m70[36C70[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[23C=>[12C1[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m60[20C=>[14C60[14C2[78D[?7h[0m[?25l[?7l[24C[0m1[37C1[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C2[14C1[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[21C=>[14C3[63D[?7h[0m[?25l[?7l[24C[0m5[37C5[14C0[78D[?7h[0m[?25l[?7l[24C[0m7[22C=>[13C7[13C09[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m9[37C9[14C8[78D[?7h[0m[?25l[?7l[23C[0m71[23C=>[11C71[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[37C2[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[37C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[24C=>[11C5[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[37C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[37C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[25C=>[10C8[14C5[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[37C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C2[63D[?7h[0m[?25l[?7l[0m
+
+[23C[0m80[36C80[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[37C3[14C7[0m
+
+[24C[0m1[37C1[A[63D[?7h[0m[?25l[?7l[24C[0m6[24C=>[11C6[14C6[78D[?7h[0m[?25l[?7l[24C[0m8[25C=>[10C8[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[26C=>[9C2[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C3[A[63D[?7h[0m[?25l[?7l[24C[0m9[37C9[14C5[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m80[36C80[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[37C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[37C5[14C3[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[27C=>[8C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[26C=>[9C2[14C4[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m90[28C=>[6C90[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[37C1[A[63D[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[?25l[?7l[24C[0m3[37C3[14C4[78D[?7h[0m[?25l[?7l[24C[0m6[27C=>[8C6[14C3[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 86.0% [0m[=======================>    ] [0m 86/[0m100 [0meta [00:03]
+[79C [0m
+
+[0mReceiving credentials  91.0% [========================>   ]  91/100 eta [00:02]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 86.0% [0m[=======================>    ] [0m 87/[0m100 [0meta [00:03]
+[79C [0m
+
+[0mReceiving credentials  91.0% [========================>   ]  91/100 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[23C[0m90[28C=>[6C90[14C2[78D[?7h[0m[?25l[?7l[24C[0m1[37C1[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[37C2[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:77c7f5b8-e826-443f-a627-e15ec1a2d90c state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 91.0% [0m[========================>   ] [0m 91/[0m100 [0meta [00:02]
+[79C [0m
+
+[0mReceiving credentials  93.0% [=========================>  ]  93/100 eta [00:01]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C2[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:77c7f5b8-e826-443f-a627-e15ec1a2d90c state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 92.0% [0m[========================>   ] [0m 92/[0m100 [0meta [00:02]
+[79C [0m
+
+[0mReceiving credentials  93.0% [=========================>  ]  93/100 eta [00:01]
+[79C 
+[A[?7h[0m[?25l[?7l[24C[0m3[29C=>[6C3[14C1[0m
+
+[24C[0m4[37C4[A[63D[?7h[0m[?25l[?7l[24C[0m4[37C4[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[37C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[37C6[A[63D[?7h[0m[?25l[?7l[24C[0m5[37C5[0m
+
+[24C[0m8[30C=>[5C8[14C0[A[78D[?7h[0m[?25l[?7l[24C[0m7[30C=>[5C7[14C0[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[37C9[A[63D[?7h[0m[?25l[?7l[24C[0m8[37C8[0m
+
+[22C[0m100[31C=>[2C100[A[63D[?7h[0m[?25l[?7l[22C[0m100[31C=>[2C100[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:77c7f5b8-e826-443f-a627-e15ec1a2d90c state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m100/[0m100 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>] 100/100 eta [00:00]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m100/[0m100 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>] 100/100 eta [00:00]
+[79C 
+[0m
+
+[J[?7h[0m[?12l[?25h[?2004l[0m[?7h[0mFaber      | [0;34mCompleted 100 credential exchanges in 27.68s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mAverage time per credential: 0.28s (3.61/s)[0m
+
+[0m[0m[?7h[0;35mStarting credentials revocation[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 1 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 2 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 3 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 4 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 5 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 6 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 7 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 8 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 9 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 10 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 11 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 12 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 14 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 13 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 15 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 16 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 17 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 18 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 19 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 20 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 21 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 22 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 23 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 24 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 25 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 26 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 27 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 28 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 29 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 30 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 31 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 32 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 33 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 34 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 35 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 36 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 37 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 38 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 39 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 40 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 41 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 42 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 43 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 44 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 45 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 46 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 47 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 48 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 49 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 50 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 51 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 52 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 53 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 54 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 55 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 56 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 57 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 58 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 59 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 60 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 61 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 62 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 63 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 64 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 65 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 66 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 67 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 68 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 69 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 70 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 71 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 72 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 73 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 74 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 75 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 76 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 77 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 78 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 79 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 80 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 81 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 82 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 83 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 84 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 85 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 86 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 87 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 88 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 89 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 90 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 91 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 92 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 93 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 94 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 95 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 96 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 97 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 98 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 99 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 100 from rev reg id W7wPMmQJD4foAbYJUvVktA:4:W7wPMmQJD4foAbYJUvVktA:3:CL:728:default:CL_ACCUM:50c07208-a246-4aa0-ba91-7e7642a0de6f[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing all the credentials revocations at once[0m
+
+[0m[0m[?7h[0;35mCredentials revocation duration:  11.69s[0m
+
+[0mAlice      | 
+Alice      | Shutting down
+[0m[?7h[0mAlice      | [0;34mExited with return code 0[0m
+
+[0mFaber      | 
+Faber      | Shutting down
+[0m[?7h[0mFaber      | [0;34mExited with return code 0[0m
+
+[0m[0m[?7h[0;35mTotal runtime: 80.42s[0m
+
+[0m

@@ -1,0 +1,1530 @@
+Preparing agent image...
+sha256:7814a7656947085ddef772fd541e1d726cb395897ec4f6fdc5201977fc408870
+Trying to detect ngrok service endpoint
+jq not found
+DOCKERHOST=10.0.2.15
+DOCKER_ENV=-e LOG_LEVEL= -e RUNMODE=docker -e DOCKERHOST=10.0.2.15 -e AGENT_PORT=8050 -e TRACE_TARGET=log -e TRACE_TAG=acapy.events -e TRACE_ENABLED=
+Starting [performance] agent with args [--port 8050 --count 250 --revocation --revoke_credentials --publish_revocations_at_once --tails-server-base-url http://72ef-81-38-112-228.ngrok.io]
+[0m[?7h[0;35mStarted webhook listener on port: 8052[0m
+
+[0m[0m[?7h[0;35mStarted webhook listener on port: 8055[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistering Faber ...[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mnym_info: {'did': 'GMswoe5ocMzAYS3Ams5XDW', 'seed': 'd_000000000000000000000000307807', 'verkey': '9NZRS36QKLxdKE89KFrU5WE7Demm7veJcEM6vhVcy2x6'}[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistered DID: GMswoe5ocMzAYS3Ams5XDW[0m
+
+[0m[0m[?7h[0mAlice      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8050', '--label', 'Alice', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8050', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8051', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'alice778219', '--wallet-key', 'Alice778219', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--timing-log', 'logs/alice_perf.log', '--webhook-url', 'http://10.0.2.15:8052/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--trace-target', 'log', '--trace-tag', 'acapy.events', '--trace-label', 'Alice.trace', '--auto-accept-invites', '--auto-accept-requests', '--auto-respond-credential-offer', '--auto-store-credential', '--monitor-ping'][0m
+
+[0mAlice      | 
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | :: Alice                                    ::
+Alice      | ::                                          ::
+Alice      | ::                                          ::
+Alice      | :: Inbound Transports:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8050                  ::
+Alice      | ::                                          ::
+Alice      | :: Outbound Transports:                     ::
+Alice      | ::                                          ::
+Alice      | ::   - http                                 ::
+Alice      | ::   - https                                ::
+Alice      | ::                                          ::
+Alice      | :: Administration API:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8051                  ::
+Alice      | ::                                          ::
+Alice      | ::                               ver: 0.7.3 ::
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | 
+Alice      | Listening...
+Alice      | 
+[0m[?7h[0mFaber      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8053', '--label', 'Faber', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8053', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8054', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'faber307807', '--wallet-key', 'Faber307807', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--seed', 'd_000000000000000000000000307807', '--webhook-url', 'http://10.0.2.15:8055/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--tails-server-base-url', 'http://72ef-81-38-112-228.ngrok.io', '--auto-accept-invites', '--auto-accept-requests', '--monitor-ping', '--auto-respond-credential-proposal', '--auto-respond-credential-request'][0m
+
+[0mFaber      | 
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | :: Faber                                    ::
+Faber      | ::                                          ::
+Faber      | ::                                          ::
+Faber      | :: Inbound Transports:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8053                  ::
+Faber      | ::                                          ::
+Faber      | :: Outbound Transports:                     ::
+Faber      | ::                                          ::
+Faber      | ::   - http                                 ::
+Faber      | ::   - https                                ::
+Faber      | ::                                          ::
+Faber      | :: Public DID Information:                  ::
+Faber      | ::                                          ::
+Faber      | ::   - DID: GMswoe5ocMzAYS3Ams5XDW          ::
+Faber      | ::                                          ::
+Faber      | :: Administration API:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8054                  ::
+Faber      | ::                                          ::
+Faber      | ::                               ver: 0.7.3 ::
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | 
+Faber      | Listening...
+Faber      | 
+[0m[?7h[0;35mStartup duration: 8.07s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mConnected[0m
+
+[0m[0m[?7h[0;35mConnect duration: 0.29s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test schema[0m
+
+[0m[0m[?7h[0mAlice      | [0;34mConnected[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mSchema ID: GMswoe5ocMzAYS3Ams5XDW:2:degree schema:8.72.83[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test credential definition[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mCredential Definition ID: GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default[0m
+
+[0m[0m[?7h[0;35mPublish duration: 19.09s[0m
+
+[0m[0m[?7h[0;35mStarting credential issues[0m
+
+[0m[?1l[6n[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m250 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/250 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1lWARNING: your terminal doesn't support cursor position requests (CPR).
+
+[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m250 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/250 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[58C[0m] [0m [C0/[0m250 [0meta [ [0m
+
+[26C[0m8[31C]  [C2/250 eta [11:59[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C2[35C3[10C08[C01[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[11C6[2C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C5[11C4[C54[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[13C06[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[11C3[C32[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[35C8[13C06[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[11C2[C51[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[3C=>[29C10[13C37[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[13C23[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m33[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[13C2[A[77D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C3[13C1[A[77D[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[13C05[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C5[11C1[C58[A[78D[?7h[0m[?25l[?7l[0m
+
+[74C[0m2[C00[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[11C1[C52[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[13C46[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C6[4C=>[29C9[13C35[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[34C20[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[13C26[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m30[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m40[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m53[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[13C49[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C3[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m10[C4[35C6[13C24[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[5C=>[27C30[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[13C19[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m20[A[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[10C23:46[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[76C[0m54[0m
+
+[26C[0m8[35C2[13C18[A[78D[?7h[0m[?25l[?7l[74C[0m4[C02[0m
+
+[24C[0m3[C2[35C3[14C6[A[78D[?7h[0m[?25l[?7l[76C[0m26[0m
+
+[26C[0m6[35C4[14C5[A[78D[?7h[0m[?25l[?7l[76C[0m33[0m
+
+[24C[0m4[C0[35C5[14C2[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m4[35C6[14C0[A[78D[?7h[0m[?25l[?7l[76C[0m46[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[76C[0m53[0m
+
+[26C[0m8[35C7[13C09[A[78D[?7h[0m[?25l[?7l[74C[0m5[C00[0m
+
+[24C[0m5[C2[6C=>[27C8[14C7[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[24C[0m6[C0[34C40[14C3[A[78D[?7h[0m[?25l[?7l[76C[0m18[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[24C[0m1[C2[35C3[10C16[C52[0m
+
+[26C[0m4[35C1[14C2[A[78D[?7h[0m[?25l[?7l[24C[0m2[C0[35C5[11C0[C05[78D[?7h[0m[?25l[?7l[24C[0m3[C2[35C8[10C06[C1[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[77C[0m9[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[11C5[C38[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[3C=>[29C10[13C04[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[26C[0m4[35C1[11C4[C40[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[26C[0m8[35C2[14C5[A[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[13C22[78D[?7h[0m[?25l[?7l[24C[0m5[C2[35C3[13C0[77D[?7h[0m[?25l[?7l[24C[0m7[37C8[11C2[C5[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[24C[0m8[C4[4C=>[28C21[13C26[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[24C[0m7[C2[35C3[14C5[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[76C[0m33[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[26C[0m6[35C4[14C6[A[78D[?7h[0m[?25l[?7l[23C[0m11[C2[5C=>[28C8[11C1[C53[78D[?7h[0m[?25l[?7l[24C[0m2[C0[34C30[13C45[0m
+
+[24C[0m8[C4[35C6[14C3[A[78D[?7h[0m[?25l[?7l[26C[0m4[35C1[14C1[78D[?7h[0m[?25l[?7l[24C[0m3[C6[35C4[13C3[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C5[13C29[78D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C6[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[26C[0m8[7C=>[26C7[14C3[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mStarted 100 credential exchanges in 14.70s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 14.4% [0m[===>                        ] [0m 36/[0m250 [0meta [01:27]
+[79C [0m
+
+[0mReceiving credentials  18.8% [=====>                      ]  47/250 eta [01:03]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m5[C2[6C=>[27C8[14C2[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C8[14C2[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[14C0[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m6[C0[34C40[14C0[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[23C[0m20[C0[34C50[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[11C0[C59[A[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[24C[0m2[C4[8C=>[25C6[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[35C8[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[24C[0m7[C2[35C3[13C16[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[34C60[14C0[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C4[14C5[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C5[14C3[78D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C1[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m4[35C1[14C0[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[26C[0m8[7C=>[26C7[14C1[78D[?7h[0m[?25l[?7l[77C[0m2[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[24C[0m9[C6[35C9[14C0[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[23C[0m20[C0[34C50[13C08[78D[?7h[0m[?25l[?7l[24C[0m1[C2[35C3[14C4[78D[?7h[0m[?25l[?7l[24C[0m3[10C=>[25C8[11C0[C57[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[14C6[78D[?7h[0m[?25l[?7l[24C[0m4[C0[34C60[14C5[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m5[C2[35C3[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C4[9C=>[24C6[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C8[13C48[A[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m4[35C1[14C7[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[24C[0m8[C0[34C70[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[74C[0m1[C00[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[11C0[C59[78D[?7h[0m[?25l[?7l[24C[0m5[C2[35C3[14C8[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m6[C0[9C=>[24C5[14C6[0m
+
+[76C[0m50[A[78D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C5[78D[?7h[0m[?25l[?7l[26C[0m8[35C7[14C4[78D[?7h[0m[?25l[?7l[24C[0m7[C2[35C8[14C3[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[14C2[78D[?7h[0m[?25l[?7l[24C[0m8[C0[34C70[14C1[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[26C[0m4[35C1[14C1[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C3[13C49[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[23C[0m30[C0[10C=>[23C5[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[14C7[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C4[34C81[14C4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[14C4[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[24C[0m9[C2[35C3[63D[?7h[0m[?25l[?7l[23C[0m30[C0[10C=>[23C5[14C3[78D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[35C3[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[11C=>[22C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C5[14C5[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[26C[0m8[35C7[14C3[78D[?7h[0m[?25l[?7l[24C[0m1[C6[35C9[14C1[0m
+
+[26C[0m8[35C7[14C4[A[78D[?7h[0m[?25l[?7l[24C[0m2[C0[34C80[14C0[78D[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 32.4% [0m[========>                   ] [0m 81/[0m250 [0meta [00:50]
+[79C [0m
+
+[0mReceiving credentials  34.8% [=========>                  ]  87/250 eta [00:45]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C8[14C4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 32.4% [0m[========>                   ] [0m 81/[0m250 [0meta [00:51]
+[79C [0m
+
+[0mReceiving credentials  35.6% [=========>                  ]  89/250 eta [00:44]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[34C90[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C2[14C0[78D[?7h[0m[?25l[?7l[24C[0m3[C6[11C=>[22C4[13C49[0m
+
+[26C[0m8[35C2[14C2[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C5[14C8[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:42]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:42]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:42]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:42]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:43]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:43]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:43]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  36.8% [=========>                  ]  92/250 eta [00:43]
+[79C 
+[A[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[24C[0m7[C2[12C=>[21C3[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:48]
+[79C [0m
+
+[0mReceiving credentials  37.6% [==========>                 ]  94/250 eta [00:42]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 34.4% [0m[=========>                  ] [0m 86/[0m250 [0meta [00:48]
+[79C [0m
+
+[0mReceiving credentials  37.6% [==========>                 ]  94/250 eta [00:42]
+[79C 
+[A[?7h[0m[?25l[?7l[26C[0m8[35C7[14C7[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[24C[0m5[C2[35C8[14C7[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 35.2% [0m[=========>                  ] [0m 88/[0m250 [0meta [00:47]
+[79C [0m
+
+[0mReceiving credentials  37.6% [==========>                 ]  94/250 eta [00:42]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[14C1[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[24C[0m6[C4[34C91[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C6[35C9[13C39[A[78D[?7h[0m[?25l[?7l[24C[0m7[C6[12C=>[21C4[14C3[0m
+
+[23C[0m40[C0[33C100[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m4[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m40[A[78D[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[77C[0m6[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C5[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C5[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[26C[0m8[35C7[0m
+
+[26C[0m8[13C=>[20C2[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 38.8% [0m[==========>                 ] [0m 97/[0m250 [0meta [00:45]
+[79C [0m
+
+[0mReceiving credentials  40.8% [===========>                ] 102/250 eta [00:41]
+[79C 
+[A[?7h[0m[?25l[?7l[24C[0m9[C2[35C8[14C4[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[24C[0m1[C2[35C3[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C5[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[63D[?7h[0m[?25l[?7l[23C[0m40[C0[33C100[14C5[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[35C8[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[34C10[13C38[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[26C[0m8[13C=>[20C2[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[24C[0m5[C2[14C=>[19C3[14C8[A[78D[?7h[0m[?25l[?7l[24C[0m1[C2[35C3[14C5[0m
+
+[26C[0m6[35C4[14C7[A[78D[?7h[0m[?25l[?7l[24C[0m2[C4[35C6[14C3[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[14C5[A[78D[?7h[0m[?25l[?7l[77C[0m4[78D[?7h[0m[?25l[?7l[26C[0m8[35C7[14C3[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[24C[0m3[C6[35C9[14C2[78D[?7h[0m[?25l[?7l[24C[0m4[C0[34C10[14C1[0m
+
+[24C[0m8[C0[34C20[14C5[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m4[15C=>[18C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 44.4% [0m[===========>                ] [0m111/[0m250 [0meta [00:41]
+[79C [0m
+
+[0mReceiving credentials  48.8% [=============>              ] 122/250 eta [00:34]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[14C=>[19C2[63D[?7h[0m[?25l[?7l[24C[0m5[C6[35C4[13C39[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[24C[0m6[C4[35C6[14C8[78D[?7h[0m[?25l[?7l[24C[0m7[C6[35C9[14C6[0m
+
+[24C[0m9[C2[35C3[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m50[C4[35C6[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[26C[0m8[35C7[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C2[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[24C[0m8[C0[34C20[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[16C=>[16C30[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[35C3[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C5[13C29[A[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m30[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m4[15C=>[18C1[63D[?7h[0m[?25l[?7l[26C[0m8[35C2[14C7[78D[?7h[0m[?25l[?7l[24C[0m9[C2[35C3[63D[?7h[0m[?25l[?7l[23C[0m50[C8[35C7[14C4[78D[?7h[0m[?25l[?7l[24C[0m1[C2[35C8[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[13C29[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[26C[0m6[17C=>[16C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[34C40[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[14C8[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C3[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mStarted 100 credential exchanges in 23.29s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 51.6% [0m[=============>              ] [0m129/[0m250 [0meta [00:35]
+[79C [0m
+
+[0mReceiving credentials  57.2% [===============>            ] 143/250 eta [00:28]
+[79C 
+[A[?7h[0m[?25l[?7l[24C[0m2[C0[16C=>[16C30[63D[?7h[0m[?25l[?7l[24C[0m3[C2[35C3[14C3[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C5[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m4[C0[35C5[14C2[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[23C[0m60[C0[18C=>[14C50[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C7[63D[?7h[0m[?25l[?7l[24C[0m5[C2[35C8[14C1[78D[?7h[0m[?25l[?7l[24C[0m6[C4[17C=>[15C41[14C0[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[24C[0m7[C6[35C4[13C29[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m9[C2[35C8[14C7[78D[?7h[0m[?25l[?7l[23C[0m60[C4[18C=>[14C51[14C6[0m
+
+[24C[0m1[C2[35C3[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[14C4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C5[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C2[19C=>[14C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C4[34C61[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[77C[0m7[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m1[C2[35C3[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C3[14C2[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C4[14C6[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m6[C0[35C5[A[63D[?7h[0m[?25l[?7l[24C[0m2[C8[35C7[14C5[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[20C=>[13C7[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C8[A[63D[?7h[0m[?25l[?7l[77C[0m6[78D[?7h[0m[?25l[?7l[24C[0m4[C0[19C=>[13C60[14C4[78D[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C4[34C71[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[24C[0m5[C6[35C4[14C3[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m6[C4[35C6[14C2[78D[?7h[0m[?25l[?7l[26C[0m8[20C=>[13C7[63D[?7h[0m[?25l[?7l[24C[0m7[C2[35C8[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C3[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[13C19[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m70[C4[21C=>[12C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C2[35C8[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C4[34C81[14C7[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[63D[?7h[0m[?25l[?7l[24C[0m8[C0[34C70[14C1[78D[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C6[35C4[14C6[A[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[22C=>[11C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C5[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m9[C2[35C3[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[26C[0m6[35C4[14C0[78D[?7h[0m[?25l[?7l[23C[0m70[C0[35C5[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C8[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[26C[0m4[21C=>[12C6[63D[?7h[0m[?25l[?7l[26C[0m8[35C7[13C19[78D[?7h[0m[?25l[?7l[24C[0m2[C0[34C80[14C8[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[14C7[0m
+
+[24C[0m6[C0[34C90[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[14C4[A[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[C6[35C4[14C7[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C5[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[22C=>[11C7[14C6[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  77.2% [====================>       ] 193/250 eta [00:14]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  77.2% [====================>       ] 193/250 eta [00:14]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  77.2% [====================>       ] 193/250 eta [00:14]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  77.2% [====================>       ] 193/250 eta [00:14]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  77.6% [====================>       ] 194/250 eta [00:14]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  78.0% [=====================>      ] 195/250 eta [00:13]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 74.8% [0m[====================>       ] [0m187/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  78.0% [=====================>      ] 195/250 eta [00:13]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[24C[0m5[C2[35C8[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 75.6% [0m[====================>       ] [0m189/[0m250 [0meta [00:16]
+[79C [0m
+
+[0mReceiving credentials  78.4% [=====================>      ] 196/250 eta [00:13]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m6[C0[34C90[14C5[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 76.0% [0m[====================>       ] [0m190/[0m250 [0meta [00:15]
+[79C [0m
+
+[0mReceiving credentials  78.4% [=====================>      ] 196/250 eta [00:13]
+[79C 
+[A[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[24C[0m7[C2[35C3[14C4[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[23C[0m80[C0[33C200[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mDone starting 250 credential exchanges in 50.43s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 77.2% [0m[====================>       ] [0m193/[0m250 [0meta [00:14]
+[79C [0m
+
+[0mReceiving credentials  80.0% [=====================>      ] 200/250 eta [00:12]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 77.2% [0m[====================>       ] [0m193/[0m250 [0meta [00:14]
+[79C [0m
+
+[0mReceiving credentials  80.0% [=====================>      ] 200/250 eta [00:12]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:042e11d5-83f4-4c93-9360-b1423abefe3a state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 77.2% [0m[====================>       ] [0m193/[0m250 [0meta [00:15]
+[79C [0m
+
+[0mReceiving credentials  80.0% [=====================>      ] 200/250 eta [00:12]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m6[35C4[14C4[78D[?7h[0m[?25l[?7l[24C[0m8[C0[23C=>[10C5[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[63D[?7h[0m[?25l[?7l[26C[0m8[35C7[14C3[78D[?7h[0m[?25l[?7l[24C[0m9[C2[35C8[63D[?7h[0m[?25l[?7l[26C[0m6[35C9[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[23C[0m80[C0[33C200[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C2[35C3[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[24C=>[9C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[24C[0m1[C2[35C3[14C2[78D[?7h[0m[?25l[?7l[24C[0m2[C0[24C=>[9C5[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C6[35C9[14C0[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:042e11d5-83f4-4c93-9360-b1423abefe3a state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 82.0% [0m[======================>     ] [0m205/[0m250 [0meta [00:12]
+[79C [0m
+
+[0mReceiving credentials  83.6% [======================>     ] 209/250 eta [00:10]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[34C10[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C6[25C=>[8C4[13C09[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C2[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[26C[0m8[35C7[14C1[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[34C20[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C1[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[26C=>[7C3[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C4[A[63D[?7h[0m[?25l[?7l[24C[0m3[C6[35C9[63D[?7h[0m[?25l[?7l[24C[0m4[C0[34C10[14C0[78D[?7h[0m[?25l[?7l[24C[0m5[C2[25C=>[8C3[13C09[0m
+
+[23C[0m90[C4[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m6[C8[35C7[14C8[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[14C5[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C2[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[34C30[A[63D[?7h[0m[?25l[?7l[24C[0m7[C2[35C8[0m
+
+[26C[0m8[27C=>[6C2[14C4[A[78D[?7h[0m[?25l[?7l[24C[0m8[C0[34C20[14C7[0m
+
+[24C[0m3[C2[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m4[35C1[63D[?7h[0m[?25l[?7l[26C[0m8[35C2[0m
+
+[24C[0m4[C0[35C5[14C3[A[78D[?7h[0m[?25l[?7l[24C[0m9[C2[26C=>[7C3[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[A[63D[?7h[0m[?25l[?7l[26C[0m6[35C4[14C6[78D[?7h[0m[?25l[?7l[23C[0m90[C0[35C5[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C2[35C8[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m8[35C7[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:042e11d5-83f4-4c93-9360-b1423abefe3a state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 90.8% [0m[========================>   ] [0m227/[0m250 [0meta [00:06]
+[79C [0m
+
+[0mReceiving credentials  95.2% [=========================>  ] 238/250 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[24C[0m1[C2[35C8[14C5[78D[?7h[0m[?25l[?7l[26C[0m6[35C9[63D[?7h[0m[?25l[?7l[24C[0m2[C0[34C30[63D[?7h[0m[?25l[?7l[26C[0m8[27C=>[6C2[14C4[78D[?7h[0m[?25l[?7l[24C[0m3[C6[35C4[63D[?7h[0m[?25l[?7l[24C[0m4[C0[35C5[14C3[78D[?7h[0m[?25l[?7l[24C[0m5[C2[35C8[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[34C40[A[63D[?7h[0m[?25l[?7l[26C[0m6[35C9[14C2[78D[?7h[0m[?25l[?7l[24C[0m6[C0[34C40[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[28C=>[5C1[A[63D[?7h[0m[?25l[?7l[26C[0m4[28C=>[5C1[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C5[14C1[A[78D[?7h[0m[?25l[?7l[26C[0m8[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m4[35C6[14C0[A[78D[?7h[0m[?25l[?7l[24C[0m7[C6[35C4[14C1[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C5[63D[?7h[0m[?25l[?7l[26C[0m4[35C6[14C0[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m8[35C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C2[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m6[35C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[22C[0m100[C0[29C=>[3C50[A[63D[?7h[0m[?25l[?7l[24C[0m9[C2[35C8[63D[?7h[0m[?25l[?7l[22C[0m100[C0[29C=>[3C50[63D[?7h[0m[?25l[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m250/[0m250 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>] 250/250 eta [00:00]
+[79C 
+[0m
+
+[J[?7h[0m[?12l[?25h[?2004l[0m[?7h[0mFaber      | [0;34mCompleted 250 credential exchanges in 61.37s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mAverage time per credential: 0.25s (4.07/s)[0m
+
+[0m[0m[?7h[0;35mStarting credentials revocation[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 1 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 2 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 3 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 4 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 5 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 6 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 7 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 8 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 9 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 10 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 11 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 12 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 13 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 14 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 15 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 16 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 17 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 18 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 19 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 20 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 21 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 22 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 23 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 24 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 25 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 26 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 27 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 28 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 29 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 30 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 31 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 32 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 33 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 34 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 35 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 36 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 37 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 38 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 39 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 40 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 41 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 42 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 43 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 44 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 45 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 46 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 47 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 48 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 49 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 50 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 51 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 52 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 53 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 54 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 55 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 56 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 57 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 58 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 59 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 60 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 61 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 62 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 63 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 64 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 66 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 65 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 67 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 68 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 69 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 70 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 71 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 72 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 73 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 74 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 75 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 76 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 77 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 78 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 79 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 80 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 81 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 82 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 83 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 84 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 85 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 86 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 87 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 88 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 89 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 90 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 91 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 93 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 92 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 94 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 95 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 96 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 97 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 98 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 99 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 1 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 2 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 3 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 4 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 5 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 6 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 7 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 8 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 9 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 10 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 11 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 12 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 13 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 14 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 15 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 16 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 18 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 17 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 19 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 20 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 21 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 22 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 23 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 24 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 25 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 26 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 27 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 28 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 29 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 30 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 31 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 32 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 33 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 34 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 35 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 100 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:8f6e3945-1d25-4118-a137-ab32cf7471f6[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 36 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 37 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 40 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 39 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 38 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 41 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 42 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 43 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 44 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 45 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 46 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 47 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 48 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 49 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 50 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 51 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 52 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 53 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 55 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 54 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 56 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 59 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 58 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 57 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 60 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 61 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 62 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 63 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 64 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 65 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 66 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 67 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 68 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 69 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 70 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 71 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 72 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 73 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 74 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 75 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 76 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 77 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 78 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 79 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 80 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 81 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 82 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 83 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 84 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 86 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 85 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 87 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 88 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 89 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 90 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 91 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 92 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 93 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 94 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 95 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 96 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 97 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 98 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 99 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 1 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 2 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 3 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 4 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 5 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 6 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 7 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 8 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 9 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 10 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 11 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 12 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 13 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 14 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 15 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 16 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 17 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 18 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 19 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 20 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 21 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 22 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 23 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 24 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 25 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 26 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 27 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 28 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 29 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 30 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 31 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 32 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 33 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 34 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 35 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 36 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 37 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 38 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 39 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 40 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 41 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 43 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 42 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 44 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 45 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 46 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 47 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 48 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 49 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 50 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:22b4d735-5c52-4ae8-bab4-f7595690d66b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevoking but NO publishing cred rev id 100 from rev reg id GMswoe5ocMzAYS3Ams5XDW:4:GMswoe5ocMzAYS3Ams5XDW:3:CL:1834:default:CL_ACCUM:396170a7-efca-4e17-8831-189f18779387[0m
+
+[0mFaber      | 
+Faber      | =================
+[0m[?7h[0mFaber      | [0;31m2022-06-01 15:34:19,573 aries_cloudagent.core.dispatcher ERROR Handler error: publish_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31mTraceback (most recent call last):
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/routes.py", line 427, in publish_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    rrid2crid,
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/manager.py", line 205, in publish_pending_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await issuer_rr_rec.clear_pending(txn, published)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/models/issuer_rev_reg_record.py", line 335, in clear_pending
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await self.save(session, reason="Cleared pending revocations")
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/messaging/models/base_record.py", line 359, in save
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    storage = session.inject(BaseStorage)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/core/profile.py", line 271, in inject
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    raise ProfileSessionInactiveError()
+
+[0m[0m[0m[?7h[0mFaber      | [0;31maries_cloudagent.core.error.ProfileSessionInactiveError
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m2022-06-01 15:34:19,574 aries_cloudagent.admin.server ERROR Handler error with exception: 
+
+[0m[0m[0m[?7h[0mFaber      | [0;31mTraceback (most recent call last):
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 159, in ready_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 196, in debug_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp_apispec/middlewares.py", line 45, in validation_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 383, in setup_context
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await task
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/routes.py", line 427, in publish_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    rrid2crid,
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/manager.py", line 205, in publish_pending_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await issuer_rr_rec.clear_pending(txn, published)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/models/issuer_rev_reg_record.py", line 335, in clear_pending
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await self.save(session, reason="Cleared pending revocations")
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/messaging/models/base_record.py", line 359, in save
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    storage = session.inject(BaseStorage)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/core/profile.py", line 271, in inject
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    raise ProfileSessionInactiveError()
+
+[0m[0m[0m[?7h[0mFaber      | [0;31maries_cloudagent.core.error.ProfileSessionInactiveError
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m2022-06-01 15:34:19,576 aiohttp.server ERROR Error handling request
+
+[0m[0m[0m[?7h[0mFaber      | [0;31mTraceback (most recent call last):
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 435, in _handle_request
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    resp = await request_handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/web_app.py", line 504, in _handle
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    resp = await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 159, in ready_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 196, in debug_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp_apispec/middlewares.py", line 45, in validation_middleware
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await handler(request)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/admin/server.py", line 383, in setup_context
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    return await task
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/routes.py", line 427, in publish_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    rrid2crid,
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/manager.py", line 205, in publish_pending_revocations
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await issuer_rr_rec.clear_pending(txn, published)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/revocation/models/issuer_rev_reg_record.py", line 335, in clear_pending
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    await self.save(session, reason="Cleared pending revocations")
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/messaging/models/base_record.py", line 359, in save
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    storage = session.inject(BaseStorage)
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m  File "/home/indy/aries_cloudagent/core/profile.py", line 271, in inject
+
+[0m[0m[0m[?7h[0mFaber      | [0;31m    raise ProfileSessionInactiveError()
+
+[0m[0m[0m[?7h[0mFaber      | [0;31maries_cloudagent.core.error.ProfileSessionInactiveError
+
+[0m[0mAlice      | 
+Alice      | Shutting down
+[0m[?7h[0mAlice      | [0;34mExited with return code 0[0m
+
+[0mFaber      | 
+Faber      | Shutting down
+[0m[?7h[0mFaber      | [0;34mExited with return code 0[0m
+
+[0mTraceback (most recent call last):
+  File "/home/indy/demo/runners/support/agent.py", line 817, in admin_request
+    resp.raise_for_status()
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/client_reqrep.py", line 1009, in raise_for_status
+    headers=self.headers,
+aiohttp.client_exceptions.ClientResponseError: 500, message='Internal Server Error', url=URL('http://10.0.2.15:8054/revocation/publish-revocations')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/indy/demo/runners/performance.py", line 1332, in <module>
+    args.publish_revocations_at_once,
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/asyncio/base_events.py", line 488, in run_until_complete
+    return future.result()
+  File "/home/indy/demo/runners/performance.py", line 1074, in main
+    await faber.publish_revocations()
+  File "/home/indy/demo/runners/performance.py", line 467, in publish_revocations
+    "/revocation/publish-revocations",{}
+  File "/home/indy/demo/runners/support/agent.py", line 918, in admin_POST
+    "POST", path, data, text, params, headers=headers
+  File "/home/indy/demo/runners/support/agent.py", line 820, in admin_request
+    raise Exception(f"Error: {resp_text}") from e
+Exception: Error: 500 Internal Server Error
+
+Server got itself in trouble

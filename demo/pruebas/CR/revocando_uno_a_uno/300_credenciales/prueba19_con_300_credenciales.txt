@@ -1,0 +1,1050 @@
+Preparing agent image...
+sha256:413acdb16dbb3dae3e818eb0a4fd1c069c31729443daba4c989f9144e74828a7
+Trying to detect ngrok service endpoint
+jq not found
+DOCKERHOST=10.0.2.15
+DOCKER_ENV=-e LOG_LEVEL= -e RUNMODE=docker -e DOCKERHOST=10.0.2.15 -e AGENT_PORT=8050 -e TRACE_TARGET=log -e TRACE_TAG=acapy.events -e TRACE_ENABLED=
+Starting [performance] agent with args [--port 8050 --count 300 --revocation --revoke_credentials --tails-server-base-url https://e996-81-38-112-228.ngrok.io]
+[0m[?7h[0;35mStarted webhook listener on port: 8052[0m
+
+[0m[0m[?7h[0;35mStarted webhook listener on port: 8055[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistering Faber ...[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mnym_info: {'did': 'bppv5CZJYXbXBHBNFs2dn', 'seed': 'd_000000000000000000000000870678', 'verkey': 'KysgmD96V9om9v3GaiMA4dNWLKH4Hgj2U4kwC75N4Zi'}[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistered DID: bppv5CZJYXbXBHBNFs2dn[0m
+
+[0m[0m[?7h[0mAlice      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8050', '--label', 'Alice', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8050', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8051', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'alice284202', '--wallet-key', 'Alice284202', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--timing-log', 'logs/alice_perf.log', '--webhook-url', 'http://10.0.2.15:8052/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--trace-target', 'log', '--trace-tag', 'acapy.events', '--trace-label', 'Alice.trace', '--auto-accept-invites', '--auto-accept-requests', '--auto-respond-credential-offer', '--auto-store-credential', '--monitor-ping'][0m
+
+[0mAlice      | 
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | :: Alice                                    ::
+Alice      | ::                                          ::
+Alice      | ::                                          ::
+Alice      | :: Inbound Transports:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8050                  ::
+Alice      | ::                                          ::
+Alice      | :: Outbound Transports:                     ::
+Alice      | ::                                          ::
+Alice      | ::   - http                                 ::
+Alice      | ::   - https                                ::
+Alice      | ::                                          ::
+Alice      | :: Administration API:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8051                  ::
+Alice      | ::                                          ::
+Alice      | ::                               ver: 0.7.3 ::
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | 
+Alice      | Listening...
+Alice      | 
+[0m[?7h[0mFaber      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8053', '--label', 'Faber', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8053', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8054', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'faber870678', '--wallet-key', 'Faber870678', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--seed', 'd_000000000000000000000000870678', '--webhook-url', 'http://10.0.2.15:8055/webhooks', '--notify-revocation', '--monitor-revocation-notification', '--tails-server-base-url', 'https://e996-81-38-112-228.ngrok.io', '--auto-accept-invites', '--auto-accept-requests', '--monitor-ping', '--auto-respond-credential-proposal', '--auto-respond-credential-request'][0m
+
+[0mFaber      | 
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | :: Faber                                    ::
+Faber      | ::                                          ::
+Faber      | ::                                          ::
+Faber      | :: Inbound Transports:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8053                  ::
+Faber      | ::                                          ::
+Faber      | :: Outbound Transports:                     ::
+Faber      | ::                                          ::
+Faber      | ::   - http                                 ::
+Faber      | ::   - https                                ::
+Faber      | ::                                          ::
+Faber      | :: Public DID Information:                  ::
+Faber      | ::                                          ::
+Faber      | ::   - DID: bppv5CZJYXbXBHBNFs2dn           ::
+Faber      | ::                                          ::
+Faber      | :: Administration API:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8054                  ::
+Faber      | ::                                          ::
+Faber      | ::                               ver: 0.7.3 ::
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | 
+Faber      | Listening...
+Faber      | 
+[0m[?7h[0;35mStartup duration: 7.92s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mConnected[0m
+
+[0m[0m[?7h[0;35mConnect duration: 0.28s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test schema[0m
+
+[0m[0m[?7h[0mAlice      | [0;34mConnected[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mSchema ID: bppv5CZJYXbXBHBNFs2dn:2:degree schema:83.72.99[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test credential definition[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: generated[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: posted[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: active[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mCredential Definition ID: bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default[0m
+
+[0m[0m[?7h[0;35mPublish duration: 24.12s[0m
+
+[0m[0m[?7h[0;35mStarting credential issues[0m
+
+[0m[?1l[6n[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m300 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/300 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1lWARNING: your terminal doesn't support cursor position requests (CPR).
+
+[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m300 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/300 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[58C[0m] [0m [C0/[0m30[C [0meta [ [0m
+
+[26C[0m7[31C]  [C2/30[C eta [12:21[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m47[A[78D[?7h[0m[?25l[?7l[0m
+
+[74C[0m3[C32[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[35C3[10C09[C05[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[11C6[C52[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C5[11C5[C39[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m42[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C3[35C7[11C4[C05[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[35C9[11C3[C11[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[34C11[11C2[C37[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[3C=>[30C2[13C24[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m32[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m40[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[13C29[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[13C14[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m24[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C6[13C19[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m20[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m31[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[13C23[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C8[13C17[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C9[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[36C22[11C1[C51[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C2[10C23:07[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[24C[0m1[37C5[10C09[C13[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[24C[0m2[C3[35C7[11C6[C34[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C8[11C5[C46[78D[?7h[0m[?25l[?7l[76C[0m54[0m
+
+[74C[0m2[C02[A[78D[?7h[0m[?25l[?7l[74C[0m6[C00[0m
+
+[26C[0m7[4C=>[29C3[11C1[C59[A[78D[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[11C5[C21[78D[?7h[0m[?25l[?7l[26C[0m3[34C10[11C4[C49[0m
+
+[74C[0m2[C00[A[78D[?7h[0m[?25l[?7l[76C[0m51[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[24C[0m8[C0[35C4[11C1[C56[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[26C[0m3[35C5[14C1[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[74C[0m5[C08[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[76C[0m11[0m
+
+[24C[0m9[37C8[13C44[A[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[23C[0m10[C7[34C32[13C30[A[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[24C[0m1[C0[35C3[13C28[A[78D[?7h[0m[?25l[?7l[76C[0m23[0m
+
+[26C[0m3[5C=>[28C4[14C7[A[78D[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[26C[0m7[35C5[14C4[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[24C[0m2[C3[35C7[13C19[A[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[76C[0m20[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[3C=>[30C2[11C4[C33[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[77C[0m4[78D[?7h[0m[?25l[?7l[24C[0m5[37C5[11C3[2C8[0m
+
+[26C[0m7[35C8[13C19[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C6[13C25[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m3[C0[35C9[14C8[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m3[34C40[14C6[A[78D[?7h[0m[?25l[?7l[76C[0m30[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[26C[0m7[35C1[14C5[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[24C[0m4[C0[35C2[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[76C[0m40[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[13C29[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[24C[0m6[C3[35C9[13C07[78D[?7h[0m[?25l[?7l[24C[0m7[C0[34C21[11C2[C48[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C2[14C1[78D[?7h[0m[?25l[?7l[26C[0m7[4C=>[29C3[13C35[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[13C29[78D[?7h[0m[?25l[?7l[76C[0m30[0m
+
+[76C[0m20[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C6[13C18[78D[?7h[0m[?25l[?7l[76C[0m20[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[24C[0m9[C0[35C7[13C15[78D[?7h[0m[?25l[?7l[23C[0m10[C7[34C32[11C1[C52[78D[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[13C49[0m
+
+[62C[0m3[14C0[A[78D[?7h[0m[?25l[?7l[26C[0m3[5C=>[28C4[14C6[0m
+
+[26C[0m3[50C1[A[78D[?7h[0m[?25l[?7l[24C[0m2[C7[35C8[13C33[0m
+
+[26C[0m7[35C4[13C19[A[78D[?7h[0m[?25l[?7l[77C[0m4[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[24C[0m5[C0[6C=>[27C5[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C6[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[14C4[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[24C[0m6[C0[35C8[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C9[14C1[A[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m7[C0[34C51[13C08[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C2[14C7[A[78D[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[26C[0m3[34C40[14C3[78D[?7h[0m[?25l[?7l[26C[0m7[35C1[14C0[78D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[13C29[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mStarted 100 credential exchanges in 14.68s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 14.0% [0m[===>                        ] [0m 42/[0m300 [0meta [01:30]
+[79C [0m
+
+[0mReceiving credentials  17.3% [====>                       ]  52/300 eta [01:09]
+[79C 
+[A[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[76C[0m10[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C3[14C2[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[24C[0m5[C0[6C=>[27C5[13C27[0m
+
+[26C[0m7[35C3[14C2[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[14C3[78D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[14C1[78D[?7h[0m[?25l[?7l[26C[0m3[35C9[14C0[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[14C1[A[78D[?7h[0m[?25l[?7l[24C[0m7[C0[34C51[13C17[0m
+
+[26C[0m3[35C5[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[7C=>[26C6[13C09[A[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[76C[0m10[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C0[35C7[13C08[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m3[35C8[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[14C6[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C2[14C8[0m
+
+[23C[0m20[C0[34C60[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C2[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[76C[0m21[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[24C[0m1[C0[35C3[A[63D[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[26C[0m3[35C4[14C5[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C3[14C2[78D[?7h[0m[?25l[?7l[24C[0m8[C3[35C5[13C19[78D[?7h[0m[?25l[?7l[24C[0m9[9C=>[26C8[14C4[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C9[14C3[78D[?7h[0m[?25l[?7l[23C[0m20[C0[34C60[14C2[78D[?7h[0m[?25l[?7l[26C[0m3[35C1[14C1[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C2[13C09[78D[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[63D[?7h[0m[?25l[?7l[26C[0m3[35C4[14C8[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m3[8C=>[25C7[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C8[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C3[34C70[14C1[A[78D[?7h[0m[?25l[?7l[76C[0m10[0m
+
+[24C[0m4[C0[35C2[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C5[14C5[78D[?7h[0m[?25l[?7l[24C[0m2[10C=>[25C8[14C1[78D[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[13C09[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[76C[0m10[78D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[26C[0m3[34C70[14C0[78D[?7h[0m[?25l[?7l[26C[0m7[35C1[13C09[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[14C5[A[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[14C8[0m
+
+[26C[0m3[35C6[14C4[A[78D[?7h[0m[?25l[?7l[77C[0m9[78D[?7h[0m[?25l[?7l[76C[0m10[0m
+
+[26C[0m7[35C7[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[9C=>[24C8[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m1[0m
+
+[26C[0m3[35C9[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[34C80[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C3[35C2[14C0[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C3[14C0[78D[?7h[0m[?25l[?7l[77C[0m1[78D[?7h[0m[?25l[?7l[26C[0m7[35C4[14C0[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[24C[0m5[C3[35C6[13C08[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[76C[0m10[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[13C09[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C5[14C0[A[78D[?7h[0m[?25l[?7l[24C[0m6[C0[9C=>[24C8[14C8[0m
+
+[24C[0m9[C0[35C7[11C0[C58[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[10C=>[22C90[14C6[A[78D[?7h[0m[?25l[?7l[26C[0m7[34C80[14C6[0m
+
+[23C[0m30[C0[A[27D[?7h[0m[?25l[?7l[24C[0m7[C0[35C1[14C5[78D[?7h[0m[?25l[?7l[26C[0m3[35C2[14C4[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C1[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[24C[0m1[C0[35C3[14C4[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 27.3% [0m[=======>                    ] [0m 82/[0m300 [0meta [01:05]
+[79C [0m
+
+[0mReceiving credentials  31.0% [========>                   ]  93/300 eta [00:54]
+[79C 
+[A[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[26C[0m3[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C5[14C3[A[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 27.3% [0m[=======>                    ] [0m 82/[0m300 [0meta [01:06]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:54]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 27.3% [0m[=======>                    ] [0m 82/[0m300 [0meta [01:06]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:54]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 27.3% [0m[=======>                    ] [0m 82/[0m300 [0meta [01:07]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:54]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 27.3% [0m[=======>                    ] [0m 82/[0m300 [0meta [01:07]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:54]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C3[14C6[78D[?7h[0m[?25l[?7l[24C[0m8[37C6[14C3[78D[?7h[0m[?25l[?7l[24C[0m9[12C=>[23C9[14C0[0m
+
+[77C[0m5[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:1c364146-90a0-4300-b610-1cacf59e9229 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.0% [0m[========>                   ] [0m 90/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  31.7% [========>                   ]  95/300 eta [00:55]
+[79C 
+[A[?7h[0m[?25l[?7l[74C[0m1[C00[0m
+
+[24C[0m2[C0[35C6[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[37C9[14C2[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C2[11C0[C58[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m3[11C=>[20C100[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:42f89afd-7c6e-45ed-9ae0-0e32ac69e51a state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 30.7% [0m[========>                   ] [0m 92/[0m300 [0meta [00:59]
+[79C [0m
+
+[0mReceiving credentials  33.3% [=========>                  ] 100/300 eta [00:52]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[14C8[78D[?7h[0m[?25l[?7l[26C[0m3[35C4[14C7[78D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C5[14C7[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[77C[0m9[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m5[A[78D[?7h[0m[?25l[?7l[24C[0m2[C0[35C6[63D[?7h[0m[?25l[?7l[26C[0m3[35C7[14C8[0m
+
+[77C[0m6[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C8[14C7[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[0m
+
+[77C[0m7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C1[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C2[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[A[63D[?7h[0m[?25l[?7l[74C[0m1[C00[0m
+
+[24C[0m5[C0[35C5[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:42f89afd-7c6e-45ed-9ae0-0e32ac69e51a state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 33.0% [0m[========>                   ] [0m 99/[0m300 [0meta [01:01]
+[79C [0m
+
+[0mReceiving credentials  35.7% [=========>                  ] 107/300 eta [00:54]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[11C=>[20C100[14C0[0m
+
+[24C[0m6[C3[35C9[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[77C[0m1[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m7[34C10[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C0[35C1[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[26C[0m3[12C=>[21C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[26C[0m7[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[14C2[A[78D[?7h[0m[?25l[?7l[77C[0m5[0m
+
+[26C[0m7[35C6[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C3[35C8[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[13C49[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m50[A[78D[?7h[0m[?25l[?7l[77C[0m6[78D[?7h[0m[?25l[?7l[24C[0m4[37C3[14C3[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m40[C0[34C20[A[63D[?7h[0m[?25l[?7l[77C[0m4[78D[?7h[0m[?25l[?7l[24C[0m5[37C6[14C1[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C1[13C49[A[78D[?7h[0m[?25l[?7l[0m
+
+[76C[0m50[A[78D[?7h[0m[?25l[?7l[77C[0m2[0m
+
+[26C[0m7[35C2[13C49[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[13C=>[20C3[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m9[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[14C7[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[14C1[78D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[63D[?7h[0m[?25l[?7l[26C[0m7[34C10[11C0[C59[0m
+
+[26C[0m7[35C8[14C6[A[78D[?7h[0m[?25l[?7l[24C[0m7[C0[35C1[14C8[78D[?7h[0m[?25l[?7l[26C[0m3[12C=>[21C2[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C3[14C7[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[14C6[78D[?7h[0m[?25l[?7l[26C[0m3[35C5[0m
+
+[24C[0m3[C0[35C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[34C30[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m9[37C8[14C4[78D[?7h[0m[?25l[?7l[26C[0m7[35C9[14C3[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:42f89afd-7c6e-45ed-9ae0-0e32ac69e51a state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 39.7% [0m[==========>                 ] [0m119/[0m300 [0meta [00:53]
+[79C [0m
+
+[0mReceiving credentials  43.7% [===========>                ] 131/300 eta [00:45]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[14C=>[19C4[14C3[A[78D[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m40[C0[34C20[14C3[78D[?7h[0m[?25l[?7l[26C[0m3[35C1[63D[?7h[0m[?25l[?7l[26C[0m7[35C2[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C9[A[63D[?7h[0m[?25l[?7l[24C[0m1[C0[13C=>[20C3[63D[?7h[0m[?25l[?7l[26C[0m3[35C4[14C1[0m
+
+[26C[0m7[34C40[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C5[63D[?7h[0m[?25l[?7l[24C[0m2[C3[35C7[13C49[78D[?7h[0m[?25l[?7l[26C[0m7[35C8[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C0[35C1[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[0m
+
+[77C[0m2[A[78D[?7h[0m[?25l[?7l[26C[0m7[34C31[14C8[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[14C7[78D[?7h[0m[?25l[?7l[26C[0m3[35C3[63D[?7h[0m[?25l[?7l[26C[0m7[14C=>[19C4[14C6[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[37C4[14C1[A[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[26C[0m3[15C=>[18C5[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[14C6[78D[?7h[0m[?25l[?7l[26C[0m3[35C6[0m
+
+[24C[0m9[C0[35C7[13C39[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C8[A[63D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[A[63D[?7h[0m[?25l[?7l[26C[0m3[35C9[14C4[78D[?7h[0m[?25l[?7l[24C[0m7[C0[34C41[14C3[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m4[0m
+
+[23C[0m50[C0[34C50[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C2[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[35C3[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C3[14C3[78D[?7h[0m[?25l[?7l[24C[0m8[C3[15C=>[18C5[14C2[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[14C7[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C6[63D[?7h[0m[?25l[?7l[24C[0m9[C0[35C7[14C1[78D[?7h[0m[?25l[?7l[26C[0m3[35C8[0m
+
+[26C[0m7[35C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[16C=>[17C6[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C7[A[63D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mStarted 100 credential exchanges in 25.51s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 49.3% [0m[=============>              ] [0m148/[0m300 [0meta [00:41]
+[79C [0m
+
+[0mReceiving credentials  52.3% [==============>             ] 157/300 eta [00:36]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C8[A[63D[?7h[0m[?25l[?7l[23C[0m50[C7[34C52[13C39[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m1[C3[35C4[14C8[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[26C[0m3[34C60[A[63D[?7h[0m[?25l[?7l[26C[0m7[35C5[14C8[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C1[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C2[A[63D[?7h[0m[?25l[?7l[24C[0m2[C0[16C=>[17C6[63D[?7h[0m[?25l[?7l[26C[0m3[35C7[14C7[78D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[14C7[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[A[63D[?7h[0m[?25l[?7l[77C[0m8[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C6[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[17C=>[16C7[A[63D[?7h[0m[?25l[?7l[26C[0m3[34C60[63D[?7h[0m[?25l[?7l[26C[0m7[35C1[14C7[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C9[14C3[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C3[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[34C70[14C3[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C4[14C6[78D[?7h[0m[?25l[?7l[77C[0m7[0m
+
+[24C[0m7[C0[35C1[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C3[14C2[A[78D[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[14C6[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m3[A[78D[?7h[0m[?25l[?7l[26C[0m3[35C6[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[17C=>[16C7[63D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C0[35C7[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[18C=>[15C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m6[78D[?7h[0m[?25l[?7l[26C[0m3[35C9[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[23C[0m60[C0[34C80[14C0[A[78D[?7h[0m[?25l[?7l[77C[0m6[0m
+
+[77C[0m1[A[78D[?7h[0m[?25l[?7l[26C[0m7[34C70[14C5[78D[?7h[0m[?25l[?7l[24C[0m7[C0[35C1[63D[?7h[0m[?25l[?7l[26C[0m3[35C2[14C4[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C3[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C1[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[35C3[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[A[63D[?7h[0m[?25l[?7l[77C[0m5[78D[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[14C4[78D[?7h[0m[?25l[?7l[26C[0m3[35C5[63D[?7h[0m[?25l[?7l[24C[0m9[20C=>[15C8[14C2[78D[?7h[0m[?25l[?7l[26C[0m7[35C9[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C5[13C29[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C8[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[19C=>[14C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[34C90[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m60[C0[34C80[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C1[63D[?7h[0m[?25l[?7l[26C[0m7[35C3[14C1[78D[?7h[0m[?25l[?7l[24C[0m1[C3[35C4[63D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 61.3% [0m[================>           ] [0m184/[0m300 [0meta [00:31]
+[79C [0m
+
+[0mReceiving credentials  63.3% [=================>          ] 190/300 eta [00:28]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C1[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 61.3% [0m[================>           ] [0m184/[0m300 [0meta [00:31]
+[79C [0m
+
+[0mReceiving credentials  63.7% [=================>          ] 191/300 eta [00:28]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 61.3% [0m[================>           ] [0m184/[0m300 [0meta [00:31]
+[79C [0m
+
+[0mReceiving credentials  63.7% [=================>          ] 191/300 eta [00:28]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C5[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 62.0% [0m[================>           ] [0m186/[0m300 [0meta [00:30]
+[79C [0m
+
+[0mReceiving credentials  63.7% [=================>          ] 191/300 eta [00:28]
+[79C 
+[A[?7h[0m[?25l[?7l[26C[0m3[35C7[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[14C7[A[78D[?7h[0m[?25l[?7l[24C[0m3[21C=>[13C90[13C29[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m8[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[14C7[A[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 63.3% [0m[=================>          ] [0m190/[0m300 [0meta [00:29]
+[79C [0m
+
+[0mReceiving credentials  65.0% [=================>          ] 195/300 eta [00:27]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C6[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:8260b25f-296c-4f6a-b4d6-9b60bc890ba0 state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 63.3% [0m[=================>          ] [0m190/[0m300 [0meta [00:29]
+[79C [0m
+
+[0mReceiving credentials  65.3% [=================>          ] 196/300 eta [00:27]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[14C6[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C3[35C9[14C5[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C1[0m
+
+[26C[0m7[20C=>[11C200[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:f226dcef-6df0-4d0c-be2a-26248a38308f state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 63.7% [0m[=================>          ] [0m191/[0m300 [0meta [00:29]
+[79C [0m
+
+[0mReceiving credentials  66.7% [==================>         ] 200/300 eta [00:25]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C3[14C8[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C0[35C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C4[63D[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C2[A[63D[?7h[0m[?25l[?7l[26C[0m3[35C6[14C7[78D[?7h[0m[?25l[?7l[26C[0m7[35C7[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C3[A[63D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C9[63D[?7h[0m[?25l[?7l[26C[0m7[20C=>[11C200[14C6[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m7[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[A[63D[?7h[0m[?25l[?7l[24C[0m7[C0[35C1[14C6[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C5[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:f226dcef-6df0-4d0c-be2a-26248a38308f state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 67.0% [0m[==================>         ] [0m201/[0m300 [0meta [00:26]
+[79C [0m
+
+[0mReceiving credentials  68.3% [==================>         ] 205/300 eta [00:25]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m7[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C0[35C7[14C4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[23C[0m70[C0[34C10[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C1[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[21C=>[12C3[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C2[63D[?7h[0m[?25l[?7l[26C[0m7[35C3[14C6[78D[?7h[0m[?25l[?7l[77C[0m7[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C7[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C8[A[63D[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[63D[?7h[0m[?25l[?7l[26C[0m3[35C5[14C6[78D[?7h[0m[?25l[?7l[26C[0m7[35C6[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m9[C0[35C7[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[34C21[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C9[14C5[0m
+
+[24C[0m4[C0[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[22C=>[11C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[13C19[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[37C8[14C8[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[36C31[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C2[A[63D[?7h[0m[?25l[?7l[23C[0m70[C0[34C10[63D[?7h[0m[?25l[?7l[26C[0m3[35C1[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[21C=>[12C2[14C4[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[63D[?7h[0m[?25l[?7l[26C[0m7[35C5[14C3[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m2[37C8[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:f226dcef-6df0-4d0c-be2a-26248a38308f state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 72.7% [0m[===================>        ] [0m218/[0m300 [0meta [00:22]
+[79C [0m
+
+[0mReceiving credentials  77.3% [====================>       ] 232/300 eta [00:17]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[63D[?7h[0m[?25l[?7l[26C[0m7[34C21[14C1[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[23C=>[10C4[A[63D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[0m
+
+[26C[0m3[35C5[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C0[35C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C9[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m80[C3[34C41[A[63D[?7h[0m[?25l[?7l[26C[0m3[22C=>[11C3[0m
+
+[26C[0m7[35C2[14C4[A[78D[?7h[0m[?25l[?7l[26C[0m7[35C4[14C0[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[63D[?7h[0m[?25l[?7l[26C[0m3[35C6[63D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[13C19[78D[?7h[0m[?25l[?7l[26C[0m3[35C9[63D[?7h[0m[?25l[?7l[24C[0m7[36C32[14C8[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[A[63D[?7h[0m[?25l[?7l[26C[0m7[35C3[63D[?7h[0m[?25l[?7l[24C[0m8[C0[23C=>[10C4[14C7[78D[?7h[0m[?25l[?7l[26C[0m7[35C6[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[24C=>[9C5[A[63D[?7h[0m[?25l[?7l[23C[0m80[C3[34C41[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[14C3[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[77C[0m4[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C7[14C3[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[35C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[34C50[14C2[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C1[A[63D[?7h[0m[?25l[?7l[26C[0m7[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C3[35C3[14C1[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[63D[?7h[0m[?25l[?7l[0m
+
+[77C[0m2[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mDone starting 300 credential exchanges in 65.00s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 81.0% [0m[=====================>      ] [0m243/[0m300 [0meta [00:15]
+[79C [0m
+
+[0mReceiving credentials  84.3% [======================>     ] 253/300 eta [00:12]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C4[63D[?7h[0m[?25l[?7l[26C[0m7[24C=>[9C5[14C4[78D[?7h[0m[?25l[?7l[24C[0m2[C0[35C6[63D[?7h[0m[?25l[?7l[26C[0m3[35C7[63D[?7h[0m[?25l[?7l[24C[0m3[C7[34C51[14C2[78D[?7h[0m[?25l[?7l[24C[0m4[C0[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[C0[35C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[25C=>[8C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m6[C0[35C8[14C0[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C0[34C61[13C09[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C2[A[63D[?7h[0m[?25l[?7l[26C[0m3[35C3[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m7[35C4[63D[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[14C1[78D[?7h[0m[?25l[?7l[26C[0m3[25C=>[8C6[63D[?7h[0m[?25l[?7l[24C[0m6[C7[34C60[14C0[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m7[C3[35C2[13C09[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[C0[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C5[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C6[14C8[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[C0[26C=>[7C7[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C8[A[63D[?7h[0m[?25l[?7l[76C[0m10[0m
+
+[26C[0m7[35C9[14C7[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m90[C0[34C70[A[63D[?7h[0m[?25l[?7l[26C[0m7[35C3[13C09[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C1[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C2[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m1[C0[35C3[14C6[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[63D[?7h[0m[?25l[?7l[26C[0m7[35C6[14C8[78D[?7h[0m[?25l[?7l[24C[0m9[C3[26C=>[7C8[63D[?7h[0m[?25l[?7l[23C[0m90[C0[34C70[14C7[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C4[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C5[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m2[C0[35C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C7[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[27C=>[6C8[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C1[63D[?7h[0m[?25l[?7l[26C[0m7[35C2[63D[?7h[0m[?25l[?7l[24C[0m1[C0[35C3[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m3[C0[35C9[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[34C80[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m4[C0[35C2[14C4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C4[14C6[78D[?7h[0m[?25l[?7l[26C[0m7[35C5[63D[?7h[0m[?25l[?7l[24C[0m2[29C=>[6C8[14C5[78D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[35C3[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C4[A[63D[?7h[0m[?25l[?7l[24C[0m3[C0[35C9[0m
+
+[24C[0m5[C0[35C5[14C3[A[78D[?7h[0m[?25l[?7l[24C[0m4[36C82[14C4[0m
+
+[26C[0m3[35C6[A[63D[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:42f89afd-7c6e-45ed-9ae0-0e32ac69e51a state: full[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 94.0% [0m[=========================>  ] [0m282/[0m300 [0meta [00:04]
+[79C [0m
+
+[0mReceiving credentials  95.3% [=========================>  ] 286/300 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: (undetermined) state: init[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 94.0% [0m[=========================>  ] [0m282/[0m300 [0meta [00:04]
+[79C [0m
+
+[0mReceiving credentials  95.3% [=========================>  ] 286/300 eta [00:03]
+[79C 
+[A[?7h[0m[?25l[?7l[26C[0m3[35C3[0m
+
+[26C[0m7[35C7[A[63D[?7h[0m[?25l[?7l[26C[0m7[35C4[0m
+
+[24C[0m6[C0[35C8[A[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m3[28C=>[5C9[14C2[A[78D[?7h[0m[?25l[?7l[24C[0m5[C0[35C5[14C3[78D[?7h[0m[?25l[?7l[26C[0m3[35C6[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:080dec47-0701-44dd-a7bb-0aa1c29c998e state: generated[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 95.3% [0m[=========================>  ] [0m286/[0m300 [0meta [00:03]
+[79C [0m
+
+[0mReceiving credentials  96.3% [==========================> ] 289/300 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[34C90[A[63D[?7h[0m[?25l[?7l[24C[0m6[C0[35C8[63D[?7h[0m[?25l[?7l[26C[0m3[28C=>[5C9[14C2[78D[?7h[0m[?25l[?7l[26C[0m7[34C90[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:080dec47-0701-44dd-a7bb-0aa1c29c998e state: posted[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 96.7% [0m[==========================> ] [0m290/[0m300 [0meta [00:02]
+[79C [0m
+
+[0mReceiving credentials  96.7% [==========================> ] 290/300 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m7[C0[35C1[A[63D[?7h[0m[?25l[?7l[24C[0m7[C0[35C1[0m
+
+[26C[0m3[35C2[A[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[26C[0m3[35C2[63D[?7h[0m[?25l[?7l[0m
+
+[26C[0m7[35C3[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m8[37C6[A[63D[?7h[0m[?25l[?7l[0m
+
+[24C[0m9[37C9[14C0[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[24C[0m8[C0[35C4[14C1[78D[?7h[0m[?25l[?7l[24C[0m9[37C7[14C0[78D[?7h[0m[?25l[?7l[26C[0m7[35C9[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mRevocation registry: bppv5CZJYXbXBHBNFs2dn:4:bppv5CZJYXbXBHBNFs2dn:3:CL:16100:default:CL_ACCUM:080dec47-0701-44dd-a7bb-0aa1c29c998e state: active[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m 99.7% [0m[==========================> ] [0m299/[0m300 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials  99.7% [==========================> ] 299/300 eta [00:00]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[22C[0m100[C0[29C=>[2C300[A[63D[?7h[0m[?25l[?7l[22C[0m100[C0[29C=>[2C300[63D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mTask raised exception: [0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m300/[0m300 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>] 300/300 eta [00:00]
+[79C 
+[A[?7h[0m[?25l[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m300/[0m300 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>] 300/300 eta [00:00]
+[79C 
+[0m
+
+[J[?7h[0m[?12l[?25h[?2004l[J[0m[?7h[?1l[0m[?7h[0mFaber      | [0;34mTask raised exception: [0m
+
+[0mAlice      | 
+Alice      | Shutting down
+[0m[?7h[0mAlice      | [0;31m2022-05-31 16:32:27,826 aries_cloudagent.core.conductor ERROR Exception in message handler:
+
+[0m[0m[0m[?7h[0mAlice      | [0;31mconcurrent.futures._base.CancelledError: Task was cancelled
+
+[0m[0m[0m[?7h[0mAlice      | [0;31m2022-05-31 16:32:27,830 aries_cloudagent.core.conductor ERROR DON'T shutdown on CancelledError Task was cancelled
+
+[0m[0m[0m[?7h[0mAlice      | [0;31m2022-05-31 16:32:27,830 aries_cloudagent.core.dispatcher ERROR Handler error: Dispatcher.handle_message
+
+[0m[0m[0m[?7h[0mAlice      | [0;31mconcurrent.futures._base.CancelledError: Task was cancelled
+
+[0m[0m[0m[?7h[0mAlice      | [0;34mExited with return code 0[0m
+
+[0mFaber      | 
+Faber      | Shutting down
+[0m[?7h[0mFaber      | [0;34mExited with return code 0[0m
+
+[0mTraceback (most recent call last):
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/indy/demo/runners/performance.py", line 1332, in <module>
+    args.publish_revocations_at_once,
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/asyncio/base_events.py", line 488, in run_until_complete
+    return future.result()
+  File "/home/indy/demo/runners/performance.py", line 1046, in main
+    await issue_task 
+  File "/home/indy/demo/runners/performance.py", line 928, in check_received_creds
+    await asyncio.wait_for(agent.update_creds(), 30)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/asyncio/tasks.py", line 362, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError

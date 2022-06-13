@@ -1,0 +1,2171 @@
+Preparing agent image...
+sha256:d66584e54d1c618bedf3228d93341db4ce3545c64ea1edbe04742d8ac99c4252
+Trying to detect ngrok service endpoint
+jq not found
+DOCKERHOST=10.0.2.15
+DOCKER_ENV=-e LOG_LEVEL= -e RUNMODE=docker -e DOCKERHOST=10.0.2.15 -e AGENT_PORT=8050 -e TRACE_TARGET=log -e TRACE_TAG=acapy.events -e TRACE_ENABLED=
+Starting [performance] agent with args [--port 8050 --count 20 --proof_presentation]
+[0m[?7h[0;35mStarted webhook listener on port: 8052[0m
+
+[0m[0m[?7h[0;35mStarted webhook listener on port: 8055[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistering Faber ...[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mnym_info: {'did': 'Rgsv557cjQMAWDGwqFfwtK', 'seed': 'd_000000000000000000000000520769', 'verkey': 'ETRUvdve99KWj2VncikW2AZa5dboAasxs2V9TyxR8aXg'}[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mRegistered DID: Rgsv557cjQMAWDGwqFfwtK[0m
+
+[0m[0m[?7h[0mAlice      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8050', '--label', 'Alice', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8050', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8051', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'alice321020', '--wallet-key', 'Alice321020', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--timing-log', 'logs/alice_perf.log', '--webhook-url', 'http://10.0.2.15:8052/webhooks', '--monitor-revocation-notification', '--trace-target', 'log', '--trace-tag', 'acapy.events', '--trace-label', 'Alice.trace', '--auto-accept-invites', '--auto-accept-requests', '--auto-respond-credential-offer', '--auto-store-credential', '--monitor-ping'][0m
+
+[0mAlice      | 
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | :: Alice                                    ::
+Alice      | ::                                          ::
+Alice      | ::                                          ::
+Alice      | :: Inbound Transports:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8050                  ::
+Alice      | ::                                          ::
+Alice      | :: Outbound Transports:                     ::
+Alice      | ::                                          ::
+Alice      | ::   - http                                 ::
+Alice      | ::   - https                                ::
+Alice      | ::                                          ::
+Alice      | :: Administration API:                      ::
+Alice      | ::                                          ::
+Alice      | ::   - http://0.0.0.0:8051                  ::
+Alice      | ::                                          ::
+Alice      | ::                               ver: 0.7.3 ::
+Alice      | ::::::::::::::::::::::::::::::::::::::::::::::
+Alice      | 
+Alice      | Listening...
+Alice      | 
+[0m[?7h[0mFaber      | [0;34m['/home/indy/.pyenv/versions/3.6.13/bin/python', '-m', 'aries_cloudagent', 'start', '--endpoint', 'http://10.0.2.15:8053', '--label', 'Faber', '--auto-ping-connection', '--auto-respond-messages', '--inbound-transport', 'http', '0.0.0.0', '8053', '--outbound-transport', 'http', '--admin', '0.0.0.0', '8054', '--admin-insecure-mode', '--wallet-type', 'indy', '--wallet-name', 'faber520769', '--wallet-key', 'Faber520769', '--preserve-exchange-records', '--auto-provision', '--public-invites', '--emit-new-didcomm-prefix', '--genesis-transactions', '{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node1","blskey":"4N8aUNHSgjQVgkpm8nhNEfDf6txHznoYREg9kirmJrkivgL4oSEimFF6nsQ6M41QvhM2Z33nves5vfSn9n1UwNFJBYtWVnHYMATn76vLuL3zU88KyeAYcHfsih3He6UHcXDxcaecHVz6jhCYz1P2UZn2bDVruL5wXpehgBfBaLKm3Ba","blskey_pop":"RahHYiCvoNCtPTrVtP7nMC5eTYrsUA8WjXbdhNc8debh1agE9bGiJxWBXYNFbnJXoXhWFMvyqhqhRoq737YQemH5ik9oL7R4NTTCz2LEZhkgLJzB3QRQqJyBNyv7acbdHrAT8nQ9UkLbaVL9NBpnWXBTw4LEMePaSHEw66RzPNdAX1","client_ip":"10.0.2.15","client_port":9702,"node_ip":"10.0.2.15","node_port":9701,"services":["VALIDATOR"]},"dest":"Gw6pDLhcBcoQesN72qfotTgFa7cbuqZpkX3Xo6pLhPhv"},"metadata":{"from":"Th7MpTaRZVRYnPiabds81Y"},"type":"0"},"txnMetadata":{"seqNo":1,"txnId":"fea82e10e894419fe2bea7d96296a6d46f50f93f9eeda954ec461b2ed2950b62"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node2","blskey":"37rAPpXVoxzKhz7d9gkUe52XuXryuLXoM6P6LbWDB7LSbG62Lsb33sfG7zqS8TK1MXwuCHj1FKNzVpsnafmqLG1vXN88rt38mNFs9TENzm4QHdBzsvCuoBnPH7rpYYDo9DZNJePaDvRvqJKByCabubJz3XXKbEeshzpz4Ma5QYpJqjk","blskey_pop":"Qr658mWZ2YC8JXGXwMDQTzuZCWF7NK9EwxphGmcBvCh6ybUuLxbG65nsX4JvD4SPNtkJ2w9ug1yLTj6fgmuDg41TgECXjLCij3RMsV8CwewBVgVN67wsA45DFWvqvLtu4rjNnE9JbdFTc1Z4WCPA3Xan44K1HoHAq9EVeaRYs8zoF5","client_ip":"10.0.2.15","client_port":9704,"node_ip":"10.0.2.15","node_port":9703,"services":["VALIDATOR"]},"dest":"8ECVSk179mjsjKRLWiQtssMLgp6EPhWXtaYyStWPSGAb"},"metadata":{"from":"EbP4aYNeTHL6q385GuVpRV"},"type":"0"},"txnMetadata":{"seqNo":2,"txnId":"1ac8aece2a18ced660fef8694b61aac3af08ba875ce3026a160acbc3a3af35fc"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node3","blskey":"3WFpdbg7C5cnLYZwFZevJqhubkFALBfCBBok15GdrKMUhUjGsk3jV6QKj6MZgEubF7oqCafxNdkm7eswgA4sdKTRc82tLGzZBd6vNqU8dupzup6uYUf32KTHTPQbuUM8Yk4QFXjEf2Usu2TJcNkdgpyeUSX42u5LqdDDpNSWUK5deC5","blskey_pop":"QwDeb2CkNSx6r8QC8vGQK3GRv7Yndn84TGNijX8YXHPiagXajyfTjoR87rXUu4G4QLk2cF8NNyqWiYMus1623dELWwx57rLCFqGh7N4ZRbGDRP4fnVcaKg1BcUxQ866Ven4gw8y4N56S5HzxXNBZtLYmhGHvDtk6PFkFwCvxYrNYjh","client_ip":"10.0.2.15","client_port":9706,"node_ip":"10.0.2.15","node_port":9705,"services":["VALIDATOR"]},"dest":"DKVxG2fXXTU8yT5N7hGEbXB3dfdAnYv1JczDUHpmDxya"},"metadata":{"from":"4cU41vWW82ArfxJxHkzXPG"},"type":"0"},"txnMetadata":{"seqNo":3,"txnId":"7e9f355dffa78ed24668f0e0e369fd8c224076571c51e2ea8be5f26479edebe4"},"ver":"1"}\n{"reqSignature":{},"txn":{"data":{"data":{"alias":"Node4","blskey":"2zN3bHM1m4rLz54MJHYSwvqzPchYp8jkHswveCLAEJVcX6Mm1wHQD1SkPYMzUDTZvWvhuE6VNAkK3KxVeEmsanSmvjVkReDeBEMxeDaayjcZjFGPydyey1qxBHmTvAnBKoPydvuTAqx5f7YNNRAdeLmUi99gERUU7TD8KfAa6MpQ9bw","blskey_pop":"RPLagxaR5xdimFzwmzYnz4ZhWtYQEj8iR5ZU53T2gitPCyCHQneUn2Huc4oeLd2B2HzkGnjAff4hWTJT6C7qHYB1Mv2wU5iHHGFWkhnTX9WsEAbunJCV2qcaXScKj4tTfvdDKfLiVuU2av6hbsMztirRze7LvYBkRHV3tGwyCptsrP","client_ip":"10.0.2.15","client_port":9708,"node_ip":"10.0.2.15","node_port":9707,"services":["VALIDATOR"]},"dest":"4PS3EDQ3dW1tci1Bp6543CfuuebjFrg36kLAUcskGfaA"},"metadata":{"from":"TWwCRQRZ2ZHMJFn9TzLp7W"},"type":"0"},"txnMetadata":{"seqNo":4,"txnId":"aa5e817d7cc626170eca175822029339a444eb0ee8f0bd20d3b0b76e566fb008"},"ver":"1"}\n', '--seed', 'd_000000000000000000000000520769', '--webhook-url', 'http://10.0.2.15:8055/webhooks', '--monitor-revocation-notification', '--trace-target', 'log', '--trace-tag', 'acapy.events', '--trace-label', 'Faber.trace', '--auto-accept-invites', '--auto-accept-requests', '--monitor-ping', '--auto-respond-credential-proposal', '--auto-respond-credential-request'][0m
+
+[0mFaber      | 
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | :: Faber                                    ::
+Faber      | ::                                          ::
+Faber      | ::                                          ::
+Faber      | :: Inbound Transports:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8053                  ::
+Faber      | ::                                          ::
+Faber      | :: Outbound Transports:                     ::
+Faber      | ::                                          ::
+Faber      | ::   - http                                 ::
+Faber      | ::   - https                                ::
+Faber      | ::                                          ::
+Faber      | :: Public DID Information:                  ::
+Faber      | ::                                          ::
+Faber      | ::   - DID: Rgsv557cjQMAWDGwqFfwtK          ::
+Faber      | ::                                          ::
+Faber      | :: Administration API:                      ::
+Faber      | ::                                          ::
+Faber      | ::   - http://0.0.0.0:8054                  ::
+Faber      | ::                                          ::
+Faber      | ::                               ver: 0.7.3 ::
+Faber      | ::::::::::::::::::::::::::::::::::::::::::::::
+Faber      | 
+Faber      | Listening...
+Faber      | 
+[0m[?7h[0;35mStartup duration: 8.28s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mConnected[0m
+
+[0m[0m[?7h[0;35mConnect duration: 0.28s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test schema[0m
+
+[0m[0m[?7h[0mAlice      | [0;34mConnected[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mSchema ID: Rgsv557cjQMAWDGwqFfwtK:2:degree schema:90.29.80[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mPublishing test credential definition[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mCredential Definition ID: Rgsv557cjQMAWDGwqFfwtK:3:CL:116:default[0m
+
+[0m[0m[?7h[0;35mPublish duration: 16.73s[0m
+
+[0m[0m[?7h[0;35mStarting credential issues[0m
+
+[0m[?1l[6n[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m 20 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/ 20 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mDone starting 20 credential exchanges in 0.31s[0m
+
+[0m[6n[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                            ] [0m  0/[0m 20 [0meta [None]
+[79C [0m
+
+[0mReceiving credentials   0.0% [>                            ]   0/ 20 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[58C[0m] [0m [C0/[0m 20 [0meta [ [0m
+
+[23C[0m1[6C==>[25C]  [C2/ 20 eta [00:14[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[7C==>[27C3[13C09[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m20[9C=>[26C4[14C6[A[78D[?7h[0m[?25l[?7l[0m
+
+[77C[0m7[A[78D[?7h[0m[J[0m[?7h[?2004l[?1lWARNING: your terminal doesn't support cursor position requests (CPR).
+
+[?2004h[?25l[0m[?7l[0m[J[0mIssuing credentials[2C [0m  0.0% [0m[>                           ] [0m  0/[0m 20 [0meta [ None]
+[79C [0m
+
+[0mReceiving credentials  20.0% [=====>                      ]   4/ 20 eta [00:08]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[10C=>[25C5[14C6[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m2[6C=====>[26C4[10C00:08[78D[?7h[0m[?25l[?7l[77C[0m9[0m
+
+[23C[0m30[11C==>[23C6[14C5[A[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[13C=>[22C7[14C4[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[23C[0m40[14C=>[21C8[14C3[A[78D[?7h[0m[?25l[?7l[24C[0m5[10C=>[25C5[14C7[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[15C==>[19C9[A[63D[?7h[0m[?25l[?7l[77C[0m8[0m
+
+[23C[0m50[17C=>[17C10[14C2[A[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[18C=>[17C1[A[63D[?7h[0m[?25l[?7l[77C[0m9[78D[?7h[0m[?25l[?7l[23C[0m30[11C==>[23C6[14C7[78D[?7h[0m[?25l[?7l[24C[0m5[13C=>[22C7[14C6[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[23C[0m40[14C=>[21C8[14C5[78D[?7h[0m[?25l[?7l[24C[0m5[15C==>[19C9[14C4[78D[?7h[0m[?25l[?7l[23C[0m5[18C==>[16C11[14C2[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[77C[0m3[0m
+
+[23C[0m60[19C==>[15C2[A[63D[?7h[0m[?25l[?7l[23C[0m60[19C==>[15C2[14C2[78D[?7h[0m[?25l[?7l[0m
+
+[24C[0m5[21C=>[14C3[A[63D[?7h[0m[?25l[?7l[24C[0m5[21C=>[14C3[63D[?7h[0m[?25l[?7l[0m
+
+[23C[0m70[22C=>[13C4[14C1[A[78D[?7h[0m[?25l[?7l[0m
+
+[23C[0m85[23C====>[9C7[14C0[A[78D[?7h[0m[?25l[?7l[23C[0m70[22C=>[13C4[14C1[0m
+
+[23C[0m9[28C===>[6C9[A[63D[?7h[0m[?25l[?7l[0m
+
+[22C[0m100[30C==>[3C20[A[63D[?7h[0m[?25l[?7l[23C[0m8[24C===>[10C6[63D[?7h[0m[?25l[?7l[24C[0m5[26C=>[9C7[14C0[78D[?7h[0m[?25l[?7l[23C[0m9[28C===>[6C9[63D[?7h[0m[?25l[?7l[0m[J[0mIssuing credentials[2C [0m100.0% [0m[===========================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mReceiving credentials 100.0% [===========================>]  20/ 20 eta [00:00]
+[79C 
+[0m
+
+[J[?7h[0m[?12l[?25h[?2004l[0m[?7h[0mFaber      | [0;34mCompleted 20 credential exchanges in 4.63s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mAverage time per credential: 0.23s (4.32/s)[0m
+
+[0m[0m[?7h[0;35mStarting proof presentations[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?1l[6n[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m  0.0% [0m[>                        ] [0m  0/[0m 20 [0meta [None]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                        ]   0/ 20 eta [None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m  0.0% [0m[>                        ] [0m  0/[0m 20 [0meta [None]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                        ]   0/ 20 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 109db418-ef5b-4609-965f-2a1f38c0e08f[0m
+
+[0m[6n[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m  0.0% [0m[>                        ] [0m  0/[0m 20 [0meta [None]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                        ]   0/ 20 eta [None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[27C[0m1[6C==>[21C] [0m [C2/[0m 20 [0meta [00:15[0m
+
+[58C[0m]  [C0/ 20 eta [ [A[74D[?7h[0m[?25l[?7l[28C[0m5[7C=>[24C3[14C0[78D[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[27C[0m20[8C=>[23C4[13C08[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 21e2be77-7445-45bd-b96a-f506e7fcf409[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 47204125-d6d2-492e-97fd-d7adf534b718[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = dc5dff2c-c528-4b56-9a93-0def7d527a66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 25.0% [0m[=====>                  ] [0m  5/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = b451835a-380d-42bf-8731-150585afa1ea[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 3f576f40-56a2-4de9-8a5e-b055baa36285[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 37b2c553-46e1-4c25-8b52-d4c54034089b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = bffdc143-b51d-4749-9357-4081da892a6f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 61d786cf-0df1-47c1-ada6-b94bf6cc8aed[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = bf07a54c-2b79-4ab8-8342-98bf44c68fc4[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = c9bcb995-0e6c-4773-8fa1-c785bb298a24[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 50abb6ca-6762-4529-82af-10ebbbffb078[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 07d912b3-cfa1-4260-9e85-93871d619398[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mDone sending 20 proofs requests in 0.28s[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 1152500c-dcad-4390-b232-c3510f88fe66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;35m#20 Request proof of degree from alice[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 37da02b2-0518-434f-829f-153e3a59588d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 1f2953d8-14a9-4cb0-8a4a-3b1e8739dc7c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = a6af53de-f4f7-428d-b152-2dedd7d67726[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = f1308ae0-076d-4e0d-8ea7-8d5392853079[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 7a3a0168-efce-4dd5-bc78-b375c14ea8b8[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 8cca25f9-a63c-4827-841d-a077b9d246a1[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:05]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = aa99257e-fb31-4fb6-9fd8-be5c7c311a18[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 02cb1f64-e452-4788-99fe-80cb487561ee[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 30.0% [0m[======>                 ] [0m  6/[0m 20 [0meta [00:06]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 79853865-a24d-499e-a66c-e56035b03d39[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 35.0% [0m[========>               ] [0m  7/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 0b3c3fe4-f7ba-4b41-ab4e-11368ebcef04[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 35.0% [0m[========>               ] [0m  7/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 35.0% [0m[========>               ] [0m  7/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[27C[0m40[13C=>[18C8[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = request-sent, pres_ex_id = 97e07f7e-ac63-4828-bd4f-ad27dad13312[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 31e8577f-ad1b-4f51-b599-2de67e389d1f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 0cb48111-ff41-4f32-a5c1-9457fa70a79d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = cfb73dc2-8d60-41fc-9653-78e9b5444cd3[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = ac8277fb-279c-4bbc-9bc6-9070bdbd891c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 07fcc13f-ab93-4d55-9eb2-2a5d5876fb5c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = ad7a7abc-b1db-4138-9fc4-4ef6627e49cd[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 40.0% [0m[=========>              ] [0m  8/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 0b960033-bf9e-4bb7-8924-3a5af017042b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 30973109-8919-4aa0-b59a-d1916b42e548[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 37f0e813-5dd9-4466-ba22-e5b4ef45699e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 0422c16a-1ab3-4d6b-b2e6-d117a07e0b31[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 4707a6a3-657e-4d58-b219-06d5c8b56740[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 5248198b-07b5-4ad8-bb12-bbf203a96dda[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 4933ab9f-5438-4eb1-b40c-26e4ae32451e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = d7e9b680-cde1-4add-bd48-a4267621d39e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = request-received, pres_ex_id = 5acba122-9171-4536-97e1-9875bcfa3a5b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#24 Query for credentials in the wallet that satisfy the proof request[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = bffdc143-b51d-4749-9357-4081da892a6f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 37da02b2-0518-434f-829f-153e3a59588d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = bf07a54c-2b79-4ab8-8342-98bf44c68fc4[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 50abb6ca-6762-4529-82af-10ebbbffb078[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 1152500c-dcad-4390-b232-c3510f88fe66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 109db418-ef5b-4609-965f-2a1f38c0e08f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = b451835a-380d-42bf-8731-150585afa1ea[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 45.0% [0m[==========>             ] [0m  9/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#25 Generate the proof[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#26 Send the proof to X: {"indy": {"requested_predicates": {"0_birthdate_dateint_GE_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3"}}, "requested_attributes": {"0_name_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_date_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}, "0_degree_uuid": {"cred_id": "0b8734d8-8719-4d29-a365-e7900823e9c3", "revealed": true}}, "self_attested_attributes": {}}}[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 109db418-ef5b-4609-965f-2a1f38c0e08f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = b451835a-380d-42bf-8731-150585afa1ea[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = dc5dff2c-c528-4b56-9a93-0def7d527a66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 47204125-d6d2-492e-97fd-d7adf534b718[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 21e2be77-7445-45bd-b96a-f506e7fcf409[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 31e8577f-ad1b-4f51-b599-2de67e389d1f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 0cb48111-ff41-4f32-a5c1-9457fa70a79d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = cfb73dc2-8d60-41fc-9653-78e9b5444cd3[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = ac8277fb-279c-4bbc-9bc6-9070bdbd891c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1lWARNING: your terminal doesn't support cursor position requests (CPR).
+
+[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = dc5dff2c-c528-4b56-9a93-0def7d527a66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests   0.0% [>                       ]   0/ 20 eta [ None]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 47204125-d6d2-492e-97fd-d7adf534b718[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  10.0% [==>                     ]   2/ 20 eta [00:35]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 21e2be77-7445-45bd-b96a-f506e7fcf409[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 3f576f40-56a2-4de9-8a5e-b055baa36285[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  15.0% [===>                    ]   3/ 20 eta [00:22]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 37b2c553-46e1-4c25-8b52-d4c54034089b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  45.0% [==========>             ]   9/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  45.0% [==========>             ]   9/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  45.0% [==========>             ]   9/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 3f576f40-56a2-4de9-8a5e-b055baa36285[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  45.0% [==========>             ]   9/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[0m
+
+[27C[0m50[15C=>[15C10[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 37b2c553-46e1-4c25-8b52-d4c54034089b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 61d786cf-0df1-47c1-ada6-b94bf6cc8aed[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 61d786cf-0df1-47c1-ada6-b94bf6cc8aed[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = c9bcb995-0e6c-4773-8fa1-c785bb298a24[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 07fcc13f-ab93-4d55-9eb2-2a5d5876fb5c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = ad7a7abc-b1db-4138-9fc4-4ef6627e49cd[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 37f0e813-5dd9-4466-ba22-e5b4ef45699e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 0b960033-bf9e-4bb7-8924-3a5af017042b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 30973109-8919-4aa0-b59a-d1916b42e548[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = c9bcb995-0e6c-4773-8fa1-c785bb298a24[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 4933ab9f-5438-4eb1-b40c-26e4ae32451e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 5248198b-07b5-4ad8-bb12-bbf203a96dda[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 0422c16a-1ab3-4d6b-b2e6-d117a07e0b31[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = d7e9b680-cde1-4add-bd48-a4267621d39e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = bffdc143-b51d-4749-9357-4081da892a6f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 37da02b2-0518-434f-829f-153e3a59588d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 4707a6a3-657e-4d58-b219-06d5c8b56740[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = presentation-sent, pres_ex_id = 5acba122-9171-4536-97e1-9875bcfa3a5b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = bf07a54c-2b79-4ab8-8342-98bf44c68fc4[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 50abb6ca-6762-4529-82af-10ebbbffb078[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 1152500c-dcad-4390-b232-c3510f88fe66[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 31e8577f-ad1b-4f51-b599-2de67e389d1f[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 0cb48111-ff41-4f32-a5c1-9457fa70a79d[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = cfb73dc2-8d60-41fc-9653-78e9b5444cd3[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = ac8277fb-279c-4bbc-9bc6-9070bdbd891c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 1f2953d8-14a9-4cb0-8a4a-3b1e8739dc7c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = a6af53de-f4f7-428d-b152-2dedd7d67726[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = f1308ae0-076d-4e0d-8ea7-8d5392853079[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 7a3a0168-efce-4dd5-bc78-b375c14ea8b8[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 50.0% [0m[===========>            ] [0m 10/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 07d912b3-cfa1-4260-9e85-93871d619398[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = aa99257e-fb31-4fb6-9fd8-be5c7c311a18[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 79853865-a24d-499e-a66c-e56035b03d39[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 0b3c3fe4-f7ba-4b41-ab4e-11368ebcef04[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 97e07f7e-ac63-4828-bd4f-ad27dad13312[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 1f2953d8-14a9-4cb0-8a4a-3b1e8739dc7c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 8cca25f9-a63c-4827-841d-a077b9d246a1[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = presentation-received, pres_ex_id = 02cb1f64-e452-4788-99fe-80cb487561ee[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#27 Process the proof provided by X[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0;1m
+
+#28 Check if proof is valid[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  50.0% [===========>            ]  10/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[0m
+
+[28C[0m5[16C=>[15C1[A[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = ad7a7abc-b1db-4138-9fc4-4ef6627e49cd[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 55.0% [0m[============>           ] [0m 11/[0m 20 [0meta [00:04]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[?25l[?7l[27C[0m60[17C=>[14C2[14C3[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = a6af53de-f4f7-428d-b152-2dedd7d67726[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 60.0% [0m[=============>          ] [0m 12/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 60.0% [0m[=============>          ] [0m 12/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[28C[0m5[18C=>[13C3[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = f1308ae0-076d-4e0d-8ea7-8d5392853079[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 65.0% [0m[==============>         ] [0m 13/[0m 20 [0meta [00:03]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 70.0% [0m[================>       ] [0m 14/[0m 20 [0meta [00:02]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 70.0% [0m[================>       ] [0m 14/[0m 20 [0meta [00:02]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 7a3a0168-efce-4dd5-bc78-b375c14ea8b8[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 70.0% [0m[================>       ] [0m 14/[0m 20 [0meta [00:02]
+[79C [0m
+
+[0mResponding proof requests  55.0% [============>           ]  11/ 20 eta [00:04]
+[79C 
+[A[?7h[0m[?25l[?7l[28C[0m5[21C=>[10C5[14C1[0m
+
+[27C[0m60[17C=>[14C2[14C3[A[78D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 80.0% [0m[==================>     ] [0m 16/[0m 20 [0meta [00:01]
+[79C [0m
+
+[0mResponding proof requests  60.0% [=============>          ]  12/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 07fcc13f-ab93-4d55-9eb2-2a5d5876fb5c[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 80.0% [0m[==================>     ] [0m 16/[0m 20 [0meta [00:01]
+[79C [0m
+
+[0mResponding proof requests  60.0% [=============>          ]  12/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 07d912b3-cfa1-4260-9e85-93871d619398[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m 90.0% [0m[====================>   ] [0m 18/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  60.0% [=============>          ]  12/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[?25l[?7l[26C[0m10[26C===>[3C20[63D[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = aa99257e-fb31-4fb6-9fd8-be5c7c311a18[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  60.0% [=============>          ]  12/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 79853865-a24d-499e-a66c-e56035b03d39[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 0b3c3fe4-f7ba-4b41-ab4e-11368ebcef04[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 97e07f7e-ac63-4828-bd4f-ad27dad13312[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 8cca25f9-a63c-4827-841d-a077b9d246a1[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mProof = true[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 37f0e813-5dd9-4466-ba22-e5b4ef45699e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mFaber      | [0;34mPresentation: state = done, pres_ex_id = 02cb1f64-e452-4788-99fe-80cb487561ee[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  65.0% [==============>         ]  13/ 20 eta [00:03]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 30973109-8919-4aa0-b59a-d1916b42e548[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  70.0% [================>       ]  14/ 20 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 0b960033-bf9e-4bb7-8924-3a5af017042b[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  75.0% [=================>      ]  15/ 20 eta [00:02]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 0422c16a-1ab3-4d6b-b2e6-d117a07e0b31[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  85.0% [===================>    ]  17/ 20 eta [00:01]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 5248198b-07b5-4ad8-bb12-bbf203a96dda[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  85.0% [===================>    ]  17/ 20 eta [00:01]
+[79C 
+[A[?7h[0m[?25l[?7l[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 4933ab9f-5438-4eb1-b40c-26e4ae32451e[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  95.0% [=====================>  ]  19/ 20 eta [00:00]
+[79C 
+[A[?7h[0m[J[0m[?7h[?2004l[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 4707a6a3-657e-4d58-b219-06d5c8b56740[0m
+
+[0m[?2004h[?25l[0m[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests  95.0% [=====================>  ]  19/ 20 eta [00:00]
+[79C 
+[A[?7h[0m[?25l[?7l[0m[J[0mSending proofs requests[2C [0m100.0% [0m[=======================>] [0m 20/[0m 20 [0meta [00:00]
+[79C [0m
+
+[0mResponding proof requests 100.0% [=======================>]  20/ 20 eta [00:00]
+[79C 
+[0m
+
+[J[?7h[0m[?12l[?25h[?2004l[J[0m[?7h[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = d7e9b680-cde1-4add-bd48-a4267621d39e[0m
+
+[0m[J[0m[?7h[?1l[0m[?7h[0mAlice      | [0;34mPresentation: state = done, pres_ex_id = 5acba122-9171-4536-97e1-9875bcfa3a5b[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mCompleted 20 proofs request exchanges in 6.17s[0m
+
+[0m[0m[?7h[0mFaber      | [0;34mAverage time per proofs: 0.31s (3.24/s)[0m
+
+[0mAlice      | 
+Alice      | Shutting down
+[0m[?7h[0mAlice      | [0;34mExited with return code 0[0m
+
+[0mFaber      | 
+Faber      | Shutting down
+[0m[?7h[0mFaber      | [0;34mExited with return code 0[0m
+
+[0m[0m[?7h[0;35mTotal runtime: 37.64s[0m
+
+[0m

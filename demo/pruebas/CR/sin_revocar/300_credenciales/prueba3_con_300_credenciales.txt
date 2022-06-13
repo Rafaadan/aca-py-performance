@@ -1,0 +1,38 @@
+Preparing agent image...
+sha256:dfaac9f3c50c75aaac47408afdabb7717a0a4ee22ddcdbca30eba1aa304302b5
+Trying to detect ngrok service endpoint
+jq not found
+DOCKERHOST=
+DOCKER_ENV=-e LOG_LEVEL= -e RUNMODE=docker -e DOCKERHOST= -e AGENT_PORT=8050 -e TRACE_TARGET=log -e TRACE_TAG=acapy.events -e TRACE_ENABLED=
+Starting [performance] agent with args [--port 8050 --count 300 --proof_presentation --revocation --tails-server-base-url http://6c36-81-38-112-228.ngrok.io]
+ERROR:runners.support.agent:Error loading genesis transactions:
+Traceback (most recent call last):
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/resolver.py", line 38, in resolve
+    flags=socket.AI_ADDRCONFIG,
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/indy/demo/runners/support/agent.py", line 97, in default_genesis_txns
+    f"http://{DEFAULT_EXTERNAL_HOST}:9000/genesis"
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/client.py", line 536, in _request
+    req, traces=traces, timeout=real_timeout
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/indy/.pyenv/versions/3.6.13/lib/python3.6/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host host.docker.internal:9000 ssl:default [Name or service not known]
+Error retrieving ledger genesis transactions
