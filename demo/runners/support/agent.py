@@ -1155,7 +1155,6 @@ class DemoAgent:
         self.connection_id = None
         if use_did_exchange:
             # TODO can mediation be used with DID exchange connections?
-            print("DID EXCHANGE")
             invi_params = {
                 "auto_accept": json.dumps(auto_accept),
             }
@@ -1170,7 +1169,6 @@ class DemoAgent:
             )
         else:
             if self.mediation:
-                print("F CHAVALES")
                 invi_params = {
                     "auto_accept": json.dumps(auto_accept),
                 }
