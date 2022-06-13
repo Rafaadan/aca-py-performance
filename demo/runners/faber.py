@@ -5,7 +5,6 @@ import os
 import sys
 import time
 import datetime
-#from turtle import delay
 
 from aiohttp import ClientError
 from qrcode import QRCode
@@ -433,134 +432,25 @@ async def main(args):
         )
 
         exchange_tracing = False
-
-        for credentials in range(args.count):
-            log_status("#13 Issue credential offer to X")
-
-            if faber_agent.aip == 10:
-                    offer_request = faber_agent.agent.generate_credential_offer(
-                        faber_agent.aip, None, faber_agent.cred_def_id, exchange_tracing
-                    )
-                    await faber_agent.agent.admin_POST(
-                        "/issue-credential/send-offer", offer_request
-                    )
-
-            elif faber_agent.aip == 20:
-                    if faber_agent.cred_type == CRED_FORMAT_INDY:
-                        offer_request = faber_agent.agent.generate_credential_offer(
-                            faber_agent.aip,
-                            faber_agent.cred_type,
-                            faber_agent.cred_def_id,
-                            exchange_tracing,
-                        )
-
-                    elif faber_agent.cred_type == CRED_FORMAT_JSON_LD:
-                        offer_request = faber_agent.agent.generate_credential_offer(
-                            faber_agent.aip,
-                            faber_agent.cred_type,
-                            None,
-                            exchange_tracing,
-                        )
-
-                    else:
-                        raise Exception(
-                            f"Error invalid credential type: {faber_agent.cred_type}"
-                        )
-
-                    await faber_agent.agent.admin_POST(
-                        "/issue-credential-2.0/send-offer", offer_request
-                    )
-
-            else:
-                    raise Exception(f"Error invalid AIP level: {faber_agent.aip}")
-
-        await faber_agent.agent.handle_issue_credential_v2_0()
-
-
-
-
-        #print("Durmiendo despues de enviar credencial")
-        #time.sleep(5.0)
-        if args.proofs:
-            for proofs in range(args.count):
-                log_status("#20 Request proof of degree from alice")
-                if faber_agent.aip == 10:
-                    proof_request_web_request = (
-                        faber_agent.agent.generate_proof_request_web_request(
-                            faber_agent.aip,
-                            faber_agent.cred_type,
-                            faber_agent.revocation,
-                            exchange_tracing,
-                        )
-                    )
-                    print(proof_request_web_request)
-                    await faber_agent.agent.admin_POST(
-                        "/present-proof/send-request", proof_request_web_request
-                    )
-                    pass
-
-                elif faber_agent.aip == 20:
-                    if faber_agent.cred_type == CRED_FORMAT_INDY:
-                        proof_request_web_request = (
-                            faber_agent.agent.generate_proof_request_web_request(
-                                faber_agent.aip,
-                                faber_agent.cred_type,
-                                faber_agent.revocation,
-                                exchange_tracing,
-                            )
-                        )
-                        print(proof_request_web_request)
-
-                    elif faber_agent.cred_type == CRED_FORMAT_JSON_LD:
-                        proof_request_web_request = (
-                            faber_agent.agent.generate_proof_request_web_request(
-                                faber_agent.aip,
-                                faber_agent.cred_type,
-                                faber_agent.revocation,
-                                exchange_tracing,
-                            )
-                        )
-                        print(proof_request_web_request)
-
-                    else:
-                        raise Exception(
-                            "Error invalid credential type:" + faber_agent.cred_type
-                        )
-
-                    await agent.admin_POST(
-                        "/present-proof-2.0/send-request", proof_request_web_request
-                    )
-
-                else:
-                    raise Exception(f"Error invalid AIP level: {faber_agent.aip}")
-
-        if args.revocations:
-            rev_reg_id = '2'
-            cred_rev_id = '2'
-            publish = ("Y")
-            #await prompt("Publish now? [Y/N]: ", default="N")
-                #).strip() in "yY"
-            try:
-                    await faber_agent.agent.admin_POST(
-                        "/revocation/revoke",
-                        {
-                            "rev_reg_id": rev_reg_id,
-                            "cred_rev_id": cred_rev_id,
-                            "publish": publish,
-                            "connection_id": faber_agent.agent.connection_id,
-                            # leave out thread_id, let aca-py generate
-                            # "thread_id": "12345678-4444-4444-4444-123456789012",
-                            "comment": "Revocation reason goes here ...",
-                        },
-                    )
-            except ClientError:
-                    pass
-
-        #print("Durmiendo antes de morir")
-        #time.sleep(200.0)
-
-        
-        '''async for option in prompt_loop(options):
+        options = (
+            "    (1) Issue Credential\n"
+            "    (2) Send Proof Request\n"
+            "    (2a) Send *Connectionless* Proof Request (requires a Mobile client)\n"
+            "    (3) Send Message\n"
+            "    (4) Create New Invitation\n"
+        )
+        if faber_agent.revocation:
+            options += "    (5) Revoke Credential\n" "    (6) Publish Revocations\n"
+        if faber_agent.endorser_role and faber_agent.endorser_role == "author":
+            options += "    (D) Set Endorser's DID\n"
+        if faber_agent.multitenant:
+            options += "    (W) Create and/or Enable Wallet\n"
+        options += "    (T) Toggle tracing on credential/proof exchange\n"
+        options += "    (X) Exit?\n[1/2/3/4/{}{}T/X] ".format(
+            "5/6/" if faber_agent.revocation else "",
+            "W/" if faber_agent.multitenant else "",
+        )
+        async for option in prompt_loop(options):
             if option is not None:
                 option = option.strip()
 
@@ -610,9 +500,9 @@ async def main(args):
                     ">>> Credential/Proof Exchange Tracing is {}".format(
                         "ON" if exchange_tracing else "OFF"
                     )
-                )'''
+                )
 
-        '''elif option == "1":
+            elif option == "1":
                 log_status("#13 Issue credential offer to X")
 
                 if faber_agent.aip == 10:
@@ -718,14 +608,15 @@ async def main(args):
                     )
                     pres_req_id = proof_request["presentation_exchange_id"]
                     url = (
-                        "http://"
-                        + os.getenv("DOCKERHOST").replace(
-                            "{PORT}", str(faber_agent.agent.admin_port + 1)
+                        os.getenv("WEBHOOK_TARGET")
+                        or (
+                            "http://"
+                            + os.getenv("DOCKERHOST").replace(
+                                "{PORT}", str(faber_agent.agent.admin_port + 1)
+                            )
+                            + "/webhooks"
                         )
-                        + "/webhooks/pres_req/"
-                        + pres_req_id
-                        + "/"
-                    )
+                    ) + f"/pres_req/{pres_req_id}/"
                     log_msg(f"Proof request url: {url}")
                     qr = QRCode(border=1)
                     qr.add_data(url)
@@ -842,7 +733,7 @@ async def main(args):
             timing = await faber_agent.agent.fetch_timing()
             if timing:
                 for line in faber_agent.agent.format_timing(timing):
-                    log_msg(line)'''
+                    log_msg(line)
 
     finally:
         terminated = await faber_agent.terminate()
@@ -855,29 +746,6 @@ async def main(args):
 
 if __name__ == "__main__":
     parser = arg_parser(ident="faber", port=8020)
-    #Añadido para poder enviar mas de una credencial y automaticamente
-    parser.add_argument(
-        "--count",
-        type=int,
-        default=10,
-        metavar=("<count>"),
-        help="Number of credentials/proofs etc.",
-    )
-    #Añadido para pedir automáticamente pruebas de credenciales
-    parser.add_argument(
-            "--proofs",
-            action="store_true",
-            help=(
-                "Request proofs to Alice"
-            ),
-        )
-    parser.add_argument(
-            "--revocations",
-            action="store_true",
-            help=(
-                "Revocates credentials of Alice"
-            ),
-    )
     args = parser.parse_args()
 
     ENABLE_PYDEVD_PYCHARM = os.getenv("ENABLE_PYDEVD_PYCHARM", "").lower()

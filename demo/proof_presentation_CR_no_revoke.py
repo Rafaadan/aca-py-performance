@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-async def main(
+def main(
    tails_server_base_url: str = None, #url del servidor tails para las revocaciones
 ):
     
@@ -26,6 +26,7 @@ async def main(
 
             #matar proceso cpu y ram
             cpu_process.kill()
+            subprocess.Popen('yes | docker image prune', shell = 'False')
 
     print("Ejecución finalizada")
 
@@ -41,14 +42,15 @@ if __name__ == "__main__":
         type=str,
         metavar="<tails-server-base-url>",
         help="Tails server base url",
- 
+    )
+
+    args = parser.parse_args()
 
 
     try:
-        asyncio.get_event_loop().run_until_complete(
-            main(
-                args.tails_server_base_url,
+        main(
+                args.tails_server_base_url
             )
-        )
+        
     except KeyboardInterrupt:
         os._exit(1)

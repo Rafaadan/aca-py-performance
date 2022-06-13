@@ -1,8 +1,7 @@
 import os
 import subprocess
-import asyncio
 
-async def main(
+def main(
    tails_server_base_url: str = None, #url del servidor tails para las revocaciones
 ):
     credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
@@ -17,13 +16,14 @@ async def main(
                 os.makedirs(f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/revocando/{cred}_credenciales")
                 os.makedirs(f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/revocando/{cred}_credenciales/datosCPUyRAM")
             cpu_process = subprocess.Popen(["bash", "cpu_y_ram.sh", f"{pid}", f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/revocando/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt"])
-            p = subprocess.Popen(["bash", "run_demo", "performance", "--count", f"{cred}", "--proof_presentation", "--revocation", "--revoke_credentials", "--publish_revocations_at_once", "--tails-server-base-url", f"{tails_server_base_url}" ], stdout=subprocess.PIPE, text= True)
+            p = subprocess.Popen(["bash", "run_demo", "performance", "--count", f"{cred}", "--revocation", "--revoke_credentials", "--publish_revocations_at_once", "--tails-server-base-url", f"{tails_server_base_url}" ], stdout=subprocess.PIPE, text= True)
             file = open(f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/revocando/{cred}_credenciales/prueba{prueba}_con_{cred}_credenciales.txt","w")
             file.write(p.communicate()[0])
             file.close()
 
             #matar proceso cpu y ram
             cpu_process.kill()
+            subprocess.Popen('yes | docker image prune', shell = 'False')
 
     print("Ejecución finalizada")
 
@@ -39,14 +39,16 @@ if __name__ == "__main__":
         type=str,
         metavar="<tails-server-base-url>",
         help="Tails server base url",
+    )
  
+    args = parser.parse_args()
+
 
 
     try:
-        asyncio.get_event_loop().run_until_complete(
             main(
                 args.tails_server_base_url,
             )
-        )
+        
     except KeyboardInterrupt:
         os._exit(1)

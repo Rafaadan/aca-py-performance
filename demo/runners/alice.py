@@ -180,20 +180,20 @@ async def main(args):
                 msg = await prompt("Enter message: ")
                 if msg:
                     await alice_agent.agent.admin_POST(
-                            f"/connections/{alice_agent.agent.connection_id}/send-message",
-                            {"content": msg},
-                        )
+                        f"/connections/{alice_agent.agent.connection_id}/send-message",
+                        {"content": msg},
+                    )
 
             elif option == "4":
-                    # handle new invitation
-                    log_status("Input new invitation details")
-                    await input_invitation(alice_agent)
+                # handle new invitation
+                log_status("Input new invitation details")
+                await input_invitation(alice_agent)
 
-            if alice_agent.show_timing:
-                timing = await alice_agent.agent.fetch_timing()
-                if timing:
-                    for line in alice_agent.agent.format_timing(timing):
-                        log_msg(line)
+        if alice_agent.show_timing:
+            timing = await alice_agent.agent.fetch_timing()
+            if timing:
+                for line in alice_agent.agent.format_timing(timing):
+                    log_msg(line)
 
     finally:
         terminated = await alice_agent.terminate()

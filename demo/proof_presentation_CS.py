@@ -2,7 +2,9 @@
 import subprocess
 import os
 
+
 credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
+
 pruebas = 25
 
 pid = os.getpid()
@@ -22,5 +24,8 @@ for cred in credenciales:
 
         #matar proceso cpu y ram
         cpu_process.kill()
+        subprocess.Popen('yes | docker image prune', shell = 'False')
+        
+        #p.kill()
 
 print("Ejecución finalizada")
