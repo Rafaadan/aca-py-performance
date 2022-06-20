@@ -77,7 +77,7 @@ class BaseAgent(DemoAgent):
         self._connection_ready = None
 
 
-    #TODOS LOS HANDLES SE LLAMAN CADA VEZ QUE EL AGENTE/FRAMEWORK NOS DEVUELVE LO QUE LE HEMOS PEDIDO
+    #TODOS LOS HANDLES SE LLAMAN CADA VEZ QUE EL AGENTE/FRAMEWORK MANDA UN WEBHOOK
     async def handle_oob_invitation(self, message):
         pass
 
@@ -94,6 +94,7 @@ class BaseAgent(DemoAgent):
     #Lo utiliza el agente (API) para notificar de la revocación (Alice en este caso)
     async def handle_revocation_notification(self, payload):
         print(payload)
+
     #Devuelve el id de la credencial que hemos emitido, lo guarda en credential_state junto con su estado
     async def handle_issue_credential(self, payload):
         cred_ex_id = payload["credential_exchange_id"]
@@ -466,7 +467,7 @@ class FaberAgent(BaseAgent):
         await self.admin_POST(
             "/revocation/publish-revocations",{}
         )
-    #ToDO (CREO QUE GENERA EL PROOF REQUEST, LUEGO TENDRÍA QUE MANDARLO YO)
+
     async def generate_proof_request_web_request(
             self, aip, cred_type, revocation, exchange_tracing, connectionless=False
     ):
@@ -669,7 +670,6 @@ class FaberAgent(BaseAgent):
 
     async def send_proof_request(self, exchange_tracing: bool = False):
         log_msg("#20 Request proof of degree from alice")
-        #log_msg(f"Tengo revocación: {self.revocation}")
         if self.aip == 10:
             proof_request_web_request = (
                 await self.generate_proof_request_web_request(
@@ -850,7 +850,7 @@ async def main(
             await alice.receive_invite(invite["invitation"]) #Alice recibe la invitación
             await asyncio.wait_for(faber.detect_connection(), 30) #Esperamos a que faber detecte la conexión con un timeout de 30s
 
-        #en caso de no se pings (credenciales), se publica el esquema y la definicion de credencial
+        #en caso de no ser pings (credenciales), se publica el esquema y la definicion de credencial
         if action != "ping":
             with log_timer("Publish duration:"):
                 await faber.publish_defs(revocation)
@@ -937,12 +937,14 @@ async def main(
                 if reported == issue_count:
                     break
 
+        #funcion para mandar ping usando semáforo
         async def send_ping(index: int):
             await semaphore.acquire()
             asyncio.ensure_future(faber.send_ping(str(index))).add_done_callback(
                 done_send
             )
 
+        #funcion para mandar una presentación de credencial usando semáforo
         async def send_proof(index: int):
             await semaphore.acquire()
             comment = f"proof test credential {index}"
@@ -1001,11 +1003,11 @@ async def main(
                 f"Started {batch_size} credential exchanges in"
             )
 
-        #pone a contar los contadores
+        #inicio de los contadores
         recv_timer.start()
         batch_timer.start()
         log_msg("Starting credential issues")
-        #Se lia. Se crea una barra de progreso
+        #Se crea una barra de progreso
         with progress() as pb:
             receive_task = None
             try:
@@ -1036,7 +1038,7 @@ async def main(
                 ) #hacemos lo mismo con alice
                 receive_task.add_done_callback(alice.check_task_exception)
 
-                #al lio. Las tres tareas con await son todos futuros por lo que correr a la vez pero asíncronamente (CREO Y ESPERO)
+                #Las tres tareas con await son todos futuros por lo que correr a la vez pero asíncronamente 
                 with faber.log_timer(completed):
                     for idx in range(0, issue_count):
                         await send(idx + 1) #manda credencial usando semaforo
@@ -1050,18 +1052,21 @@ async def main(
                     receive_task.cancel()
                 print("Cancelled")
 
+        #Para el contador y muestra el tiempo medio por credencial/ping
         recv_timer.stop()
         avg = recv_timer.duration / issue_count
         item_short = "ping" if action == "ping" else "cred"
         item_long = "ping exchange" if action == "ping" else "credential"
         faber.log(f"Average time per {item_long}: {avg:.2f}s ({1/avg:.2f}/s)")
                 
+        #Revocación de credenciales en caso de que se quieran revocar
         if revoke_credentials and faber.revocations:
             with log_timer("Credentials revocation duration: "):
                 log_msg("Starting credentials revocation")
                 for rev_reg_id, cred_rev_id in faber.revocations:                   
                     await faber.revoke_credential(rev_reg_id, cred_rev_id,
                     not publish_revocations_at_once,faber.connection_id)
+                    #en caso de no querer publicar las revocaciones al final todas juntas, se hace ahora
                     if not publish_revocations_at_once:
                         faber.log(
                             f"Revoking and publishing cred rev id {cred_rev_id} "
@@ -1074,17 +1079,17 @@ async def main(
                     await faber.publish_revocations()
                     faber.log("Publishing all the credentials revocations at once")
         
+        #Presentación de credenciales en caso de que se quieran mandar pruebas
         if proof_presentation:
-            #Intento presentar pruebas
             #Prepara los contadores               
             recv_timer = faber.log_timer(f"Completed {issue_count} proofs request exchanges in")
             batch_timer = faber.log_timer(f"Started {batch_size} proofs exchanges in")
         
-            #pone a contar los contadores
+            #Inicia contadores
             recv_timer.start()
             batch_timer.start()
             log_msg("Starting proof presentations")
-            #Se lia. Se crea una barra de progreso
+            #Se crea una barra de progreso
             with progress() as pb:
                 receive_task = None
                 try:
@@ -1105,7 +1110,7 @@ async def main(
                     ) #hacemos lo mismo con alice
                     receive_task.add_done_callback(alice.check_task_exception)
     
-                    #al lio. Las tres tareas con await son todos futuros por lo que correr a la vez pero asíncronamente (CREO Y ESPERO)
+                    #Las tres tareas con await son todos futuros por lo que correr a la vez pero asíncronamente
                     with faber.log_timer(completed):
                         for idx in range(0, issue_count):
                             await send(idx + 1) #manda credencial usando semaforo
@@ -1119,7 +1124,7 @@ async def main(
                         receive_task.cancel()
                     print("Cancelled")
     
-            
+            #Para el contador y muestra por log el tiempo medio por prueba
             recv_timer.stop()
             avg = recv_timer.duration / issue_count
             faber.log(f"Average time per proofs: {avg:.2f}s ({1/avg:.2f}/s)")
