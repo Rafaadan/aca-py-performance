@@ -39,7 +39,7 @@ for cred in credenciales:
     cpu_p = []
     for prueba in range(1,pruebas+1):
         
-        with open(f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/sin_revocar/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
+        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CR/sin_revocar/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
             for line in file:
                 if re.search("Startup duration:",line):
                     primero = line.index(":")
@@ -74,13 +74,13 @@ for cred in credenciales:
             #if(len(tiempos_avg_proof_p) != prueba):
                 #tiempos_avg_proof_p.append(tiempos_avg_proof_p[prueba-2])
 
-        with open(f"/home/rafa/aries-cloudagent-python/demo/pruebas/CR/sin_revocar/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
+        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CR/sin_revocar/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
             total_cpu = 0
             total_ram = 0
             contador = 0
             for line in file:
-                total_cpu = total_cpu + float(line[41:45])
-                total_ram = total_ram + float(line[46:50])
+                total_cpu = total_cpu + float(line[1:6])
+                total_ram = total_ram + float(line[7:10])
                 contador = contador + 1
                 
             cpu_p.append(total_cpu/contador)
