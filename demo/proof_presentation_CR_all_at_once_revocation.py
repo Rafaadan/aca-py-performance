@@ -1,19 +1,19 @@
 '''
-AUTOR: RAFAEL ADÁN LÓPEZ.
+AUTOR: RAFAEL ADAN LOPEZ.
 FECHA: 20 DE JUNIO DE 2022
 
 UNIVERSIDAD DE GRANADA
-TRABAJO DE FIN DE GRADO: EVALUACIÓN DE RENDIMIENTO DE UN ENTORNO DE SSI BASADO EN BLOCKCHAIN
+TRABAJO DE FIN DE GRADO: EVALUACION DE RENDIMIENTO DE ENTORNO SSI BASADO EN BLOCKCHAIN
 
-SCRIPT PARA EJECUTAR UN ENTORNO DE PRUEBAS DE EMISIÓN Y POSTERIOR PRESENTCIÓN DE CREDENCIALES CON REVOCACIÓN (CR) 
-(CON POSIBILIDAD DE REVOCACIÓN) ENTRE DOS AGENTES, Y REVOCANDO TODAS AL FINAL.
+SCRIPT PARA EJECUTAR UN ENTORNO DE PRUEBAS DE EMISION Y POSTERIOR PRESENTACION DE CREDENCIALES REVOCABLES (CR) 
+(CON POSIBILIDAD DE REVOCACION) ENTRE DOS AGENTES, Y REVOCANDO TODAS AL FINAL.
 
-CAMBIAR LOS DIRECTORIOS PARA USO DEL SCRIPT, PUESTO QUE ESTÁ PUESTO LA RUTA DEL DESARROLLADOR.
+CAMBIAR LOS DIRECTORIOS PARA USO DEL SCRIPT, PUESTO QUE ESTA PUESTO LA RUTA DEL DESARROLLADOR.
 
 '''
 
 
-#Importación de librerias necesarias
+#Importacion de librerias necesarias
 import os
 import subprocess
 
@@ -21,7 +21,7 @@ def main(
    tails_server_base_url: str = None, #url del servidor tails para las revocaciones
 ):
 
-    #Número de credenciales que se quieren probar y el número de pruebas a realizar con cada una
+    #Numero de credenciales que se quieren probar y el número de pruebas a realizar con cada una
     credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
     pruebas = 25
 
@@ -44,13 +44,13 @@ def main(
             file.write(p.communicate()[0])
             file.close()
 
-            #Matar proceso cpu y ram
+            #Matar proceso CPU y RAM
             cpu_process.kill()
 
-            #Optimización de las imágenes docker para que no consuman espacio adicional
+            #Optimizacion de las imagenes docker para que no consuman espacio adicional
             subprocess.Popen('yes | docker image prune', shell = 'False')
 
-    print("Ejecución finalizada")
+    print("Ejecucion finalizada")
 
 if __name__ == "__main__":
     import argparse

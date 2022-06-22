@@ -1,24 +1,26 @@
+
 '''
-AUTOR: RAFAEL ADÁN LÓPEZ.
+AUTOR: RAFAEL ADAN LOPEZ.
 FECHA: 20 DE JUNIO DE 2022
 
 UNIVERSIDAD DE GRANADA
-TRABAJO DE FIN DE GRADO: EVALUACIÓN DE RENDIMIENTO DE UN ENTORNO DE SSI BASADO EN BLOCKCHAIN
+TRABAJO DE FIN DE GRADO: EVALUACION DE RENDIMIENTO DE ENTORNO SSI BASADO EN BLOCKCHAIN
 
-SCRIPT PARA EJECUTAR UN ENTORNO DE PRUEBAS DE EMISIÓN Y POSTERIOR PRESENTCIÓN DE CREDENCIALES SIMPLES (CS) (SIN POSIBILIDAD DE REVOCACIÓN) ENTRE DOS AGENTES. 
 
-CAMBIAR LOS DIRECTORIOS PARA USO DEL SCRIPT, PUESTO QUE ESTÁ PUESTO LA RUTA DEL DESARROLLADOR.
+SCRIPT PARA EJECUTAR UN ENTORNO DE PRUEBAS DE EMISION Y POSTERIOR PRESENTACION DE CREDENCIALES SIMPLES (CS) (SIN POSIBILIDAD DE REVOCACION) ENTRE DOS AGENTES. 
+
+CAMBIAR LOS DIRECTORIOS PARA USO DEL SCRIPT, PUESTO QUE ESTA PUESTO LA RUTA DEL DESARROLLADOR.
 
 '''
 
-#Importación de librerias necesarias
+#Importacion de librerias necesarias
 import subprocess
 import os
 
-#Número de credenciales que se quieran probar
+#Numero de credenciales que se quieran probar
 credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
 
-#Número de pruebas realizadas con cada credencial
+#Numero de pruebas realizadas con cada credencial
 pruebas = 25
 
 pid = os.getpid()
@@ -44,8 +46,8 @@ for cred in credenciales:
         #Matar proceso de CPU y RAM
         cpu_process.kill()
 
-        #Optimización de las imágenes docker para que no consuman espacio adicional
+        #Optimizacion de las imagenes docker para que no consuman espacio adicional
         subprocess.Popen('yes | docker image prune', shell = 'False')
         
 
-print("Ejecución finalizada")
+print("Ejecucion finalizada")
