@@ -1,11 +1,18 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Script para plotear los resultados de las pruebas para CS (Credenciales Simples)
 
-@author: rafa
-"""
+'''
+AUTOR: RAFAEL ADAN LOPEZ.
+FECHA: 20 DE JUNIO DE 2022
 
+UNIVERSIDAD DE GRANADA
+TRABAJO DE FIN DE GRADO: EVALUACION DE RENDIMIENTO DE ENTORNO SSI BASADO EN BLOCKCHAIN
+
+SCRIPT PARA PLOTEAR LAS PRUEBAS GENERADAS CON EL SCRIPT PROOF_PRESENTATION_CR_ONE_BY_ONE_REVOCATION.PY
+
+CAMBIAR LOS DIRECTORIOS PARA USO DEL SCRIPT, PUESTO QUE ESTA PUESTO LA RUTA DEL DESARROLLADOR.
+
+'''
+
+#Importación de librerías usadas
 import re
 import subprocess
 import os
@@ -14,33 +21,38 @@ import matplotlib.pyplot as plt
 
 
 
-#Vector de vectores (cred X pruebas)
+#Vector de vectores donde se guardaran los tiempos y la CPU y RAM usada (cred X pruebas)
 tiempos_startup = []
 tiempos_connect = []
 tiempos_publish = []
 tiempos_avg_credential = []
-tiempos_avg_proof = []
+tiempos_revocation = []
 tiempos_total = []
 cpu_array = []
 ram_array = []
 pid = os.getpid()
 
-credenciales = [10, 20, 50, 100, 150, 200, 250, 300, 400, 500]
+#Numero de credenciales y pruebas
+credenciales = [10, 20, 50, 100]
 pruebas = 25
 
 for cred in credenciales:
+
+    #Vector de tiempos con las 25 pruebas para una credencial
     tiempos_startup_p = []
     tiempos_connect_p = []
     tiempos_publish_p = []
     tiempos_avg_credential_p = []
-    tiempos_avg_proof_p = []
     tiempos_total_p = []
-    tiempos_revoke_p = []
+    tiempos_revocation_p = []
     ram_p = []
     cpu_p = []
+
+
     for prueba in range(1,pruebas+1):
         
-        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CS/{cred}_credenciales/prueba{prueba}_con_{cred}_credenciales.txt","r") as file:
+        #Se abre el archivo de log para la prueba 'prueba' y el numero de credencial 'cred' y se buscan los patrones para extraer los tiempos
+        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CR/revocando_uno_a_uno/{cred}_credenciales/prueba{prueba}_con_{cred}_credenciales.txt","r") as file:
             for line in file:
                 if re.search("Startup duration:",line):
                     primero = line.index(":")
@@ -58,16 +70,17 @@ for cred in credenciales:
                     primero = line.index(":")
                     segundo = line.index("s")
                     tiempos_avg_credential_p.append(float(line[primero+2:segundo]))
-                elif re.search("Average time per proofs:",line):
+                elif re.search("Credentials revocation duration:",line):
                     primero = line.index(":")
-                    segundo = line.index("s", 60)
-                    tiempos_avg_proof_p.append(float(line[primero+2:segundo]))
+                    segundo = line.index("s",52)
+                    tiempos_revocation_p.append(float(line[primero+2:segundo]))
                 elif re.search("Total runtime:",line):
                     primero = line.index(":")
                     segundo = line.index("s")
                     tiempos_total_p.append(float(line[primero+2:segundo]))
-        
-        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CS/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
+
+        #Se abre el archivo de log para la prueba 'prueba' y el numero de credencial 'cred' y se buscan los patrones para extraer la CPU y RAM usada
+        with open(f"/home/rafa/aca-py-performance/demo/pruebas/CR/revocando_uno_a_uno/{cred}_credenciales/datosCPUyRAM/CPU_{cred}_credenciales_prueba_{prueba}.txt","r") as file:
             total_cpu = 0
             total_ram = 0
             contador = 0
@@ -79,7 +92,8 @@ for cred in credenciales:
             cpu_p.append(total_cpu/contador)
             ram_p.append(total_ram/contador)
         
-        
+    #En caso de que alguna prueba haya tenido errores, es posible que no haya tiempos. En ese caso, se rellena los elementos necesarios para llegar a 25 pruebas
+    #con la media del vector
     while(len(tiempos_startup_p) != pruebas):
         tiempos_startup_p.append(sum(tiempos_startup_p)/len(tiempos_startup_p))
     while(len(tiempos_publish_p) != pruebas):
@@ -88,46 +102,52 @@ for cred in credenciales:
         tiempos_connect_p.append(sum(tiempos_connect_p)/len(tiempos_connect_p))
     while(len(tiempos_avg_credential_p) != pruebas):
         tiempos_avg_credential_p.append(sum(tiempos_avg_credential_p)/len(tiempos_avg_credential_p))
-    while(len(tiempos_avg_proof_p) != pruebas):
-        tiempos_avg_proof_p.append(sum(tiempos_avg_proof_p)/len(tiempos_avg_proof_p))
+    while(len(tiempos_revocation_p) != pruebas):
+        tiempos_revocation_p.append(sum(tiempos_revocation_p)/len(tiempos_revocation_p))
     while(len(tiempos_total_p) != pruebas):
         tiempos_total_p.append(sum(tiempos_total_p)/len(tiempos_total_p))
     
+    #Se añade el vector de 25 pruebas para la credencial 'cred' al vector de vectores.
     tiempos_startup.append(tiempos_startup_p)
     tiempos_connect.append(tiempos_connect_p)
     tiempos_publish.append(tiempos_publish_p)
     tiempos_avg_credential.append(tiempos_avg_credential_p)
-    tiempos_avg_proof.append(tiempos_avg_proof_p)
+    tiempos_revocation.append(tiempos_revocation_p)
     tiempos_total.append(tiempos_total_p)
     cpu_array.append(cpu_p)
     ram_array.append(ram_p)
-
-#Paso a DataFrame de pandas para tener una tabla
-
 
 #Voy a tener 25 pruebas para cada credencial. Entonces voy a tener 10 gráficas de Scatter donde lo suyo sería ver la media, la desviación
 #típica y eso. Después haré un dataframe con las medias de estas sietes gráficas. A este nuevo dataframe lo muestro para ver como se comporta
 #todo conforme subo el número de credenciales.
 #Ploteo cada una de las columnas del dataFrame
 
-medias_startup = []
-medias_connect = []
-medias_publish = []
-medias_avg_credential = []
-medias_avg_proof = []
-medias_total = []
-
+#Se pasa las credenciales a string para el dataframe
 credenciales_string = []
 for credentials in credenciales:
     credenciales_string.append(str(credentials))
 
+#Vectores con las medias de las pruebas para cada credencial
+medias_startup = []
+medias_connect = []
+medias_publish = []
+medias_avg_credential = []
+medias_revocation = []
+medias_total = []
+
+#Creacion de directorios para tablas excel
+if(not os.path.exists(f"/home/rafa/aca-py-performance/demo/tablas_excel/CR/revocando_uno_a_uno")):
+    os.makedirs(f"/home/rafa/aca-py-performance/demo/tablas_excel/CR/revocando_uno_a_uno")
+        
 for cred in range(1, len(credenciales)+1):
+
+    #Se crea un dataFrame para cada credencial
     dataframe = None
     startup = tiempos_startup[cred-1]
     connect = tiempos_connect[cred-1]
     publish = tiempos_publish[cred-1]
     avg_credential = tiempos_avg_credential[cred-1]
-    avg_proof = tiempos_avg_proof[cred-1]
+    revocation = tiempos_revocation[cred-1]
     total = tiempos_total[cred-1]
     cpu = cpu_array[cred-1]
     ram = ram_array[cred-1]
@@ -136,35 +156,65 @@ for cred in range(1, len(credenciales)+1):
         'Connect': connect,
         'Publish': publish,
         'Average cred': avg_credential,
-        'Average proof': avg_proof,
+        'Revocation': revocation,
         'Total': total,
         'CPU': cpu,
         'RAM': ram
         })
-    #dataframe.index = credenciales_string
+
+    #Se pasa a float y se muestran los datos estadísticos de las pruebas para cada credencial
     dataframe = dataframe.astype(float)
     print(f"Datos estadísticos para {credenciales[cred-1]} credenciales \n")
     print(dataframe.describe())
     print("\n")
+    
+    dataframe.to_excel(f"tablas_excel/CR/{credenciales[cred-1]}_credenciales.xlsx")
+    dataframe.describe().to_excel(f"tablas_excel/CR/revocando_uno_a_uno/{credenciales[cred-1]}_credenciales_describe.xlsx")
+
+    #Se plotea un esquema de cajas y bigotes del dataFrame creado
     dataframe.plot(kind='box', title=f"Pruebas para {credenciales[cred-1]} credenciales")
+
+    #Se añade al vector de medias la media de cada tiempo del dataFrame
     medias_startup.append(dataframe["Startup"].mean())
     medias_connect.append(dataframe["Connect"].mean())
     medias_publish.append(dataframe["Publish"].mean())
     medias_avg_credential.append(dataframe["Average cred"].mean())
-    medias_avg_proof.append(dataframe["Average proof"].mean())
+    medias_revocation.append(dataframe["Revocation"].mean())
     medias_total.append(dataframe["Total"].mean())
 
+#Para mostrar los ploteos del bucle for
+plt.show()
+
+#Se crea un dataFrame con las medias calculadas anteriormente 
 df_final = pd.DataFrame({
         'Startup': medias_startup,
         'Connect': medias_connect,
         'Publish': medias_publish,
         'Average cred': medias_avg_credential,
-        'Average proof': medias_avg_proof,
+        'Revocation': medias_revocation,
         'Total': medias_total,
 }, index = credenciales_string)
+
+#Se muestran los datos de la tabla final con los tiempos para cada numero de credencial
 print(f"TABLA FINAL \n")
 print(df_final)
-plt.show()
+df_final.to_excel("tablas_excel/CR/revocando_uno_a_uno/tablafinal.xlsx")
+
+#Se plotea una grafica para cada tipo de tiempo con las medias calculadas para cada numero de credencial
 df_final["Startup"].plot(title="FINAL Startup")
 plt.show()
 
+df_final["Connect"].plot(title="FINAL Connect")
+plt.show()
+
+df_final["Publish"].plot(title="FINAL Publish")
+plt.show()
+
+df_final["Average cred"].plot(title="FINAL Average cred")
+plt.show()
+
+df_final["Revocation"].plot(title="FINAL Revocation")
+plt.show()
+
+df_final["Total"].plot(title="FINAL Total")
+plt.show()
