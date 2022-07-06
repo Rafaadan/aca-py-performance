@@ -118,10 +118,109 @@ for cred in credenciales:
     cpu_array.append(cpu_p)
     ram_array.append(ram_p)
 
-#Voy a tener 25 pruebas para cada credencial. Entonces voy a tener 10 gráficas de Scatter donde lo suyo sería ver la media, la desviación
-#típica y eso. Después haré un dataframe con las medias de estas sietes gráficas. A este nuevo dataframe lo muestro para ver como se comporta
-#todo conforme subo el número de credenciales.
-#Ploteo cada una de las columnas del dataFrame
+#Ploteo los tiempos tiempos en diagramas de cajas y bigotes para ver los datos estadísticos
+
+datastartup = pd.DataFrame({
+    '10 credenciales' : tiempos_startup[0],
+    '20 credenciales' : tiempos_startup[1],
+    '50 credenciales' : tiempos_startup[2],
+    '100 credenciales': tiempos_startup[3],
+    '150 credenciales': tiempos_startup[4],
+    '200 credenciales': tiempos_startup[5],
+    '250 credenciales': tiempos_startup[6],
+    '300 credenciales': tiempos_startup[7],
+    '400 credenciales': tiempos_startup[8],
+    '500 credenciales': tiempos_startup[9],
+})
+
+datastartup.to_excel(f"tablas_excel/CR/sin_revocar/startup.xlsx")
+datastartup.plot(kind='box', title=f"Startup CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
+
+dataconnect= pd.DataFrame({
+    '10 credenciales' : tiempos_connect[0],
+    '20 credenciales' : tiempos_connect[1],
+    '50 credenciales' : tiempos_connect[2],
+    '100 credenciales': tiempos_connect[3],
+    '150 credenciales': tiempos_connect[4],
+    '200 credenciales': tiempos_connect[5],
+    '250 credenciales': tiempos_connect[6],
+    '300 credenciales': tiempos_connect[7],
+    '400 credenciales': tiempos_connect[8],
+    '500 credenciales': tiempos_connect[9],
+})
+
+dataconnect.to_excel(f"tablas_excel/CR/sin_revocar/connect.xlsx")
+dataconnect.plot(kind='box', title=f"Connect CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
+
+datapublish = pd.DataFrame({
+    '10 credenciales' : tiempos_publish[0],
+    '20 credenciales' : tiempos_publish[1],
+    '50 credenciales' : tiempos_publish[2],
+    '100 credenciales': tiempos_publish[3],
+    '150 credenciales': tiempos_publish[4],
+    '200 credenciales': tiempos_publish[5],
+    '250 credenciales': tiempos_publish[6],
+    '300 credenciales': tiempos_publish[7],
+    '400 credenciales': tiempos_publish[8],
+    '500 credenciales': tiempos_publish[9],
+})
+
+datapublish.to_excel(f"tablas_excel/CR/sin_revocar/publish.xlsx")
+datapublish.plot(kind='box', title=f"Publish CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
+
+dataavgcred = pd.DataFrame({
+    '10 credenciales' : tiempos_avg_credential[0],
+    '20 credenciales' : tiempos_avg_credential[1],
+    '50 credenciales' : tiempos_avg_credential[2],
+    '100 credenciales': tiempos_avg_credential[3],
+    '150 credenciales': tiempos_avg_credential[4],
+    '200 credenciales': tiempos_avg_credential[5],
+    '250 credenciales': tiempos_avg_credential[6],
+    '300 credenciales': tiempos_avg_credential[7],
+    '400 credenciales': tiempos_avg_credential[8],
+    '500 credenciales': tiempos_avg_credential[9],
+})
+
+dataavgcred.to_excel(f"tablas_excel/CR/sin_revocar/avgcred.xlsx")
+dataavgcred.plot(kind='box', title=f"Avg per credential CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
+
+dataavgproof = pd.DataFrame({
+    '10 credenciales' : tiempos_avg_proof[0],
+    '20 credenciales' : tiempos_avg_proof[1],
+    '50 credenciales' : tiempos_avg_proof[2],
+    '100 credenciales': tiempos_avg_proof[3],
+    '150 credenciales': tiempos_avg_proof[4],
+    '200 credenciales': tiempos_avg_proof[5],
+    '250 credenciales': tiempos_avg_proof[6],
+    '300 credenciales': tiempos_avg_proof[7],
+    '400 credenciales': tiempos_avg_proof[8],
+    '500 credenciales': tiempos_avg_proof[9],
+})
+
+dataavgproof.to_excel(f"tablas_excel/CR/sin_revocar/avgproof.xlsx")
+dataavgproof.plot(kind='box', title=f"Avg per proof CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
+
+datatotal = pd.DataFrame({
+    '10 credenciales' : tiempos_total[0],
+    '20 credenciales' : tiempos_total[1],
+    '50 credenciales' : tiempos_total[2],
+    '100 credenciales': tiempos_total[3],
+    '150 credenciales': tiempos_total[4],
+    '200 credenciales': tiempos_total[5],
+    '250 credenciales': tiempos_total[6],
+    '300 credenciales': tiempos_total[7],
+    '400 credenciales': tiempos_total[8],
+    '500 credenciales': tiempos_total[9],
+})
+
+datatotal.to_excel(f"tablas_excel/CR/sin_revocar/total.xlsx")
+datatotal.plot(kind='box', title=f"Total CR no revocation", legend=True, xlabel="Numero de credenciales", ylabel = "Tiempo (s)")
+plt.show()
 
 #Se pasa las credenciales a string para el dataframe
 credenciales_string = []
