@@ -73,7 +73,7 @@ for cred in credenciales:
                 elif re.search("Credentials revocation duration:",line):
                     primero = line.index(":")
                     segundo = line.index("s",52)
-                    tiempos_revocation_p.append(float(line[primero+2:segundo]))
+                    tiempos_revocation_p.append(float(line[primero+2:segundo])/cred)
                 elif re.search("Total runtime:",line):
                     primero = line.index(":")
                     segundo = line.index("s")
@@ -165,10 +165,10 @@ plt.show()
 
 
 dataavgrevocation = pd.DataFrame({
-    '10 credenciales' : tiempos_revocation[0]/credenciales[0],
-    '20 credenciales' : tiempos_revocation[1]/credenciales[1],
-    '50 credenciales' : tiempos_revocation[2]/credenciales[2],
-    '100 credenciales': tiempos_revocation[3]/credenciales[3],
+    '10 credenciales' : tiempos_revocation[0],
+    '20 credenciales' : tiempos_revocation[1],
+    '50 credenciales' : tiempos_revocation[2],
+    '100 credenciales': tiempos_revocation[3],
 })
 
 
