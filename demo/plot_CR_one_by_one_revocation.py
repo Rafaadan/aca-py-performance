@@ -164,10 +164,10 @@ dataavgcred.plot(kind='box', title=f"Avg per credential CR revocando una a una",
 plt.show()
 
 dataavgrevocation = pd.DataFrame({
-    '10 credenciales' : tiempos_revocation[0],
-    '20 credenciales' : tiempos_revocation[1],
-    '50 credenciales' : tiempos_revocation[2],
-    '100 credenciales': tiempos_revocation[3],
+    '10 credenciales' : tiempos_revocation[0]/credenciales[0],
+    '20 credenciales' : tiempos_revocation[1]/credenciales[1],
+    '50 credenciales' : tiempos_revocation[2]/credenciales[2],
+    '100 credenciales': tiempos_revocation[3]/credenciales[3],
 })
 
 dataavgrevocation.to_excel(f"tablas_excel/CR/revocando_uno_a_uno/avgrevocation.xlsx")
