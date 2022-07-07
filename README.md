@@ -9,6 +9,15 @@ ACA-Py Performance is a project which aim is to evaluate the performance of the 
 All the process will be documented in the final project of Rafael Adán López, student of Telecommunications Engeenering. For more information, contact rafaadan6@correo.ugr.es.
 ## Installation
 
+VM with Virtual Box used (Ubuntu 20.04 LTS).
+
+### Git
+
+Install git:
+
+sudo apt update
+sudo apt install git
+
 ## Usage
 
 
