@@ -7,19 +7,10 @@ ACA-Py Performance is a project which aim is to evaluate the performance of the 
 - https://github.com/bcgov/indy-tails-server
 
 All the process will be documented in the final project of Rafael Adán López, student of Telecommunications Engeenering. For more information, contact rafaadan6@correo.ugr.es.
-## Installation
 
-VM with Virtual Box used (Ubuntu 20.04 LTS).
+## Installation and Usage
 
-### Git
-
-Install git:
-
-sudo apt update
-sudo apt install git
-
-## Usage
-
+All the information to install and use the project is explained in the file TFG_Rafael_Adan.pdf. For more information, contact rafaadan6@correo.ugr.es.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
