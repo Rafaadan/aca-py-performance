@@ -10,7 +10,7 @@ All the process will be documented in the final project of Rafael Adán López, 
 
 ## Installation and Usage
 
-All the information to install and use the project is explained in the file TFG_Rafael_Adan.pdf. For more information, contact rafaadan6@correo.ugr.es.
+All the information to install and use the project is explained in the file TFG_Rafael_Adan_Lopez.pdf. For more information, contact rafaadan6@correo.ugr.es.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
